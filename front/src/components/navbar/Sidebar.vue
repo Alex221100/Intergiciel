@@ -19,6 +19,7 @@
         :key="item.title"
         :active-class="`success white--text`"
         link
+        v-scroll-to="item.to"
       >
         <v-list-item-icon>
           <v-icon>{{ item.icon }}</v-icon>
@@ -47,38 +48,33 @@ export default {
   data: () => ({
     items: [
       {
-        title: "Dashboard",
-        icon: "mdi-view-dashboard",
-        to: "#home"
-      },
-      {
         title: "GET Global values",
         icon: "mdi-view-dashboard",
-        to: "#block1"
+        to: "#element"
       },
 
       {
         title: "GET Country values",
         icon: "mdi-account-circle",
-        to: "#block2"
+        to: "#element"
       },
 
       {
         title: "GET Confirmed avg",
         icon: "mdi-alert",
-        to: "#block3"
+        to: "#element"
       },
 
       {
         title: "GET Deaths avg",
         icon: "mdi-emoticon",
-        to: "#block4"
+        to: "#element"
       },
 
       {
         title: "GET Country Deaths percent",
         icon: "mdi-table-column-width",
-        to: "#block5"
+        to: "#element"
       }
     ]
   }),
