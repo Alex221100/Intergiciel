@@ -50,31 +50,31 @@ export default {
       {
         title: "GET Global values",
         icon: "mdi-view-dashboard",
-        to: "#element"
+        to: "#card1"
       },
 
       {
         title: "GET Country values",
-        icon: "mdi-account-circle",
-        to: "#element"
+        icon: "mdi-city-variant",
+        to: "#card2"
       },
 
       {
         title: "GET Confirmed avg",
-        icon: "mdi-alert",
-        to: "#element"
+        icon: "mdi-bookmark-check",
+        to: "#card3"
       },
 
       {
         title: "GET Deaths avg",
-        icon: "mdi-emoticon",
-        to: "#element"
+        icon: "mdi-death-star",
+        to: "#card4"
       },
 
       {
         title: "GET Country Deaths percent",
-        icon: "mdi-table-column-width",
-        to: "#element"
+        icon: "mdi-percent",
+        to: "#card5"
       }
     ]
   }),
