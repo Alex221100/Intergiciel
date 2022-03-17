@@ -12,17 +12,9 @@
               <v-row>
                 <v-col>
                   <code>nom de la route</code><br/>
-                  <v-btn elevation="2">Lancer</v-btn>
+                  <v-btn elevation="2" @click="getGlobalValues">Lancer</v-btn>
                 </v-col>
-                <v-col class=terminal>"Global": {<br/>
-        "NewConfirmed": 833541,<br/>
-        "TotalConfirmed": 449107234,<br/>
-        "NewDeaths": 5011,<br/>
-        "TotalDeaths": 6010103,<br/>
-        "NewRecovered": 0,<br/>
-        "TotalRecovered": 0,<br/>
-        "Date": "2022-03-09T18:19:51.473Z"<br/>
-    },<br/></v-col>
+                <v-col class=terminal>{{globalValues}}</v-col>
               </v-row>
             </div>
           </v-card-text>
@@ -40,17 +32,9 @@
               <v-row>
                 <v-col>
                   <code>nom de la route</code><br/>
-                  <v-btn elevation="2">Lancer</v-btn>
+                  <v-btn elevation="2" @click="getCountryValues">Lancer</v-btn>
                 </v-col>
-                <v-col class=terminal>"Global": {<br/>
-        "NewConfirmed": 833541,<br/>
-        "TotalConfirmed": 449107234,<br/>
-        "NewDeaths": 5011,<br/>
-        "TotalDeaths": 6010103,<br/>
-        "NewRecovered": 0,<br/>
-        "TotalRecovered": 0,<br/>
-        "Date": "2022-03-09T18:19:51.473Z"<br/>
-    },<br/></v-col>
+                <v-col class=terminal>{{countryValues}}</v-col>
               </v-row>
             </div>
           </v-card-text>
@@ -68,17 +52,9 @@
               <v-row>
                 <v-col>
                   <code>nom de la route</code><br/>
-                  <v-btn elevation="2">Lancer</v-btn>
+                  <v-btn elevation="2" @click="getConfirmedAvg">Lancer</v-btn>
                 </v-col>
-                <v-col class=terminal>"Global": {<br/>
-        "NewConfirmed": 833541,<br/>
-        "TotalConfirmed": 449107234,<br/>
-        "NewDeaths": 5011,<br/>
-        "TotalDeaths": 6010103,<br/>
-        "NewRecovered": 0,<br/>
-        "TotalRecovered": 0,<br/>
-        "Date": "2022-03-09T18:19:51.473Z"<br/>
-    },<br/></v-col>
+                <v-col class=terminal>{{confirmedAvg}}</v-col>
               </v-row>
             </div>
           </v-card-text>
@@ -142,7 +118,33 @@
   </v-container>
 </template>
 
+<script>
+import covidService from '../../services/covid/covidService'
 
+export default {
+  data() {
+    return{
+      globalValues: null,
+      countryValues: null,
+      confirmedAvg: null
+    }
+  },
+  methods:{
+    async getGlobalValues(){
+      const response = await covidService.getGlobalValues();
+      this.globalValues = response;
+    },
+    async getCountryValues(){
+      const response = await covidService.getCountryValues();
+      this.countryValues = response;
+    },
+    async getConfirmedAvg(){
+      const response = await covidService.getConfirmedAvg();
+      this.confirmedAvg = response;
+    }
+  }
+}
+</script>
 <style scoped>
 .v-card{
   margin-top: 50px;
