@@ -1,8 +1,11 @@
 package Work;
 
+import Work.Jobs.SummaryJob;
 import Work.Producers.Pr1;
 import org.apache.kafka.clients.consumer.Consumer;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.quartz.*;
+import org.quartz.impl.StdSchedulerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -12,22 +15,25 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Main {
 
-    private static final Logger log = LoggerFactory.getLogger(Main.class);
-
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SchedulerException {
         SpringApplication.run(Main.class, args);
-        Pr1 pr1 = new Pr1();
-        /*APIController.getCountries().subscribe(country -> {
-                        if (country.getClass() == Country.class) {
-                            producer.sendMessage(country);
-                        }
-                    });*/
-        /*APIController.getGlobal().subscribe(global -> {
-            if (global.getClass() == Global.class) {
-                producer.sendMessage(global);
-            }
-        });*/
-        pr1.sendMessage();
+
+        Scheduler scheduler = new StdSchedulerFactory().getScheduler();
+
+        JobDetail job = JobBuilder.newJob(SummaryJob.class)
+                .withIdentity("summaryJob", "group1")
+                .build();
+
+        Trigger trigger = TriggerBuilder.newTrigger()
+                .withIdentity("summaryJob", "group1")
+                .startNow()
+                .withSchedule(SimpleScheduleBuilder.simpleSchedule()
+                        .withIntervalInSeconds(10)
+                        .repeatForever())
+                .build();
+
+        scheduler.scheduleJob(job, trigger);
+        scheduler.start();
     }
 
 }

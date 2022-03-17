@@ -1,51 +1,43 @@
 package Work.Producers;
 
-import Model.Summary;
 import Work.APIController;
-import org.apache.kafka.clients.consumer.Consumer;
-import org.apache.kafka.clients.consumer.ConsumerConfig;
-import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
-import org.apache.kafka.clients.producer.RecordMetadata;
-import org.apache.kafka.common.serialization.LongDeserializer;
 import org.apache.kafka.common.serialization.LongSerializer;
-import org.apache.kafka.common.serialization.StringDeserializer;
 import org.apache.kafka.common.serialization.StringSerializer;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
-import org.springframework.kafka.core.DefaultKafkaProducerFactory;
-import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.web.reactive.function.client.WebClient;
 
-import java.util.Collections;
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
 import java.util.concurrent.ExecutionException;
 
 
 @Service
 public class Pr1 {
 
-    private static final String TOPIC = "Topic1";
+    private static Pr1 instance = null;
+    private static final KafkaProducer<Long, String> producer = new KafkaProducer<>(new HashMap<>() {{
+        put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        put(ProducerConfig.CLIENT_ID_CONFIG, "cs1");
+        put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, LongSerializer.class.getName());
+        put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+    }});
 
-    private KafkaProducer<Long, String> producer;
+    private Pr1() {
 
-    public Pr1() {
-        Properties props = new Properties();
-        props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-        props.put(ProducerConfig.CLIENT_ID_CONFIG, "cs1");
-        props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, LongSerializer.class.getName());
-        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
-        this.producer = new KafkaProducer<>(props);
     }
 
-    public void sendMessage() {
+    public static Pr1 getInstance() {
+        if (instance == null) {
+            instance = new Pr1();
+        }
+
+        return instance;
+    }
+
+    public void sendCovidSummary() {
         APIController.getSummaryToJson().subscribe(summary -> {
-                    final ProducerRecord<Long, String> record = new ProducerRecord<Long, String>(TOPIC, summary);
+                    final ProducerRecord<Long, String> record = new ProducerRecord<Long, String>("Topic1", summary);
                     try {
                         producer.send(record).get();
                     }
