@@ -1,6 +1,17 @@
 package Work.Producers;
 
+import Model.Summary;
+import Work.APIController;
+import org.apache.kafka.clients.consumer.Consumer;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.clients.producer.RecordMetadata;
+import org.apache.kafka.common.serialization.LongDeserializer;
+import org.apache.kafka.common.serialization.LongSerializer;
+import org.apache.kafka.common.serialization.StringDeserializer;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -9,9 +20,11 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
+import java.util.concurrent.ExecutionException;
 
 
 @Service
@@ -19,27 +32,27 @@ public class Pr1 {
 
     private static final String TOPIC = "Topic1";
 
-    private KafkaTemplate<String, String> kafkaT;
-    private static final WebClient webClient = WebClient.create("https://api.covid19api.com/");
+    private KafkaProducer<Long, String> producer;
+
+    public Pr1() {
+        Properties props = new Properties();
+        props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        props.put(ProducerConfig.CLIENT_ID_CONFIG, "cs1");
+        props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, LongSerializer.class.getName());
+        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+        this.producer = new KafkaProducer<>(props);
+    }
 
     public void sendMessage() {
-        String bootstrapServers = "127.0.0.1:9092";
-
-        //create Producer properties
-        Map<String, Object> properties = new HashMap<String, Object>();
-        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,bootstrapServers);
-        properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
-        properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,StringSerializer.class.getName());
-
-        this.kafkaT = new KafkaTemplate<String, String>(new DefaultKafkaProducerFactory<String, String>(properties));
-
-
-        webClient.get()
-                .uri("summary")
-                .accept(MediaType.APPLICATION_JSON)
-                .retrieve()
-                .bodyToMono(String.class)
-                .subscribe(summary -> this.kafkaT.send(TOPIC, summary));
-
+        APIController.getSummaryToJson().subscribe(summary -> {
+                    final ProducerRecord<Long, String> record = new ProducerRecord<Long, String>(TOPIC, summary);
+                    try {
+                        producer.send(record).get();
+                    }
+                    catch (ExecutionException | InterruptedException e) {
+                        System.out.println("Erreur dans l'envoi de l'enregistrement");
+                        System.out.println(e);
+                    }
+                });
     }
 }

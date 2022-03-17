@@ -1,6 +1,8 @@
 package Work;
 
 import Work.Producers.Pr1;
+import org.apache.kafka.clients.consumer.Consumer;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -26,6 +28,6 @@ public class Main {
             }
         });*/
         pr1.sendMessage();
-
     }
+
 }

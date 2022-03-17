@@ -21,7 +21,7 @@ public class CovidController {
         return ResponseEntity.ok("it works");
     }
 
-    @GetMapping(value="/country")
+    @GetMapping(value="/countryAvg")
     public ResponseEntity<String> getConfirmedAvg() {
         return ResponseEntity.ok("it works");
     }
