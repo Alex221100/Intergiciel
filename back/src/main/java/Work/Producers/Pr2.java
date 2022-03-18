@@ -9,6 +9,7 @@ import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.concurrent.ExecutionException;
 
 
@@ -36,7 +37,7 @@ public class Pr2 {
     }
 
     public void sendCommand(String command) {
-        final ProducerRecord<Long, String> record = new ProducerRecord<Long, String>("Topic2", command);
+        final ProducerRecord<Long, String> record = new ProducerRecord<Long, String>("Topic2", command.trim().toUpperCase(Locale.ROOT));
         try {
             producer.send(record).get();
         } catch (ExecutionException | InterruptedException e) {

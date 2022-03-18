@@ -29,9 +29,6 @@ public class GlobalDAO {
     @JsonProperty("Date")
     private Date date;
 
-    public GlobalDAO() {
-    }
-
     public GlobalDAO(int newConfirmed, int totalConfirmed, int newDeaths, int totalDeaths, int newRecovered, int totalRecovered, java.util.Date date) {
         this.newConfirmed = newConfirmed;
         this.totalConfirmed = totalConfirmed;

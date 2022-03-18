@@ -2,14 +2,25 @@ package Work.Model;
 
 import Data.Model.CountryDAO;
 import Data.Model.GlobalDAO;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Date;
 import java.util.List;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Summary {
+
+    @JsonProperty("ID")
     private String id;
+
+    @JsonProperty("Global")
     private Global global;
+
+    @JsonProperty("Countries")
     private List<Country> countries;
+
+    @JsonProperty("Date")
     private Date date;
 
     public Summary() {

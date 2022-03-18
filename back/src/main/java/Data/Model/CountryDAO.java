@@ -41,7 +41,18 @@ public class CountryDAO {
     @JsonProperty("Date")
     private Date date;
 
-    public CountryDAO() {
+    public CountryDAO(String id, String country, String countryCode, String slug, int newConfirmed, int totalConfirmed, int newDeaths, int totalDeaths, int newRecovered, int totalRecovered, Date date) {
+        this.id = id;
+        this.country = country;
+        this.countryCode = countryCode;
+        this.slug = slug;
+        this.newConfirmed = newConfirmed;
+        this.totalConfirmed = totalConfirmed;
+        this.newDeaths = newDeaths;
+        this.totalDeaths = totalDeaths;
+        this.newRecovered = newRecovered;
+        this.totalRecovered = totalRecovered;
+        this.date = date;
     }
 
     public String getId() {

@@ -2,6 +2,7 @@ package Work;
 
 import Work.Jobs.SummaryJob;
 import Work.Producers.Pr1;
+import Work.Producers.Pr2;
 import org.apache.kafka.clients.consumer.Consumer;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.quartz.*;
@@ -34,6 +35,8 @@ public class Main {
 
         scheduler.scheduleJob(job, trigger);
         scheduler.start();
+
+        Pr2.getInstance().sendCommand("global");
     }
 
 }
