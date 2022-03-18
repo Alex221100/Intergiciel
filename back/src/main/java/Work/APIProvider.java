@@ -5,7 +5,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
-public class APIController {
+public class APIProvider {
 
     private static final WebClient webClient = WebClient.create("https://api.covid19api.com/");
 
