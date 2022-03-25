@@ -1,12 +1,14 @@
 package com.Data.Entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
-//@Entity @Table(name = "Country")
+@Entity
 public class CountryDAO implements Serializable {
 
-    //@Id
+    @Id
     //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 

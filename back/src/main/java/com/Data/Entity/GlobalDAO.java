@@ -1,7 +1,10 @@
 package com.Data.Entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Date;
 
+@Entity
 public class GlobalDAO {
 
     private int newConfirmed;
@@ -16,6 +19,7 @@ public class GlobalDAO {
 
     private int totalRecovered;
 
+    @Id
     private Date date;
 
     public GlobalDAO(int newConfirmed, int totalConfirmed, int newDeaths, int totalDeaths, int newRecovered, int totalRecovered, java.util.Date date) {
