@@ -2,8 +2,11 @@ package Data.Connections;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.Statement;
 
 public class PostgreSQLJDBC {
+
+    private static boolean hasCreatedTables = false;
 
     private PostgreSQLJDBC() {}
 
@@ -12,7 +15,11 @@ public class PostgreSQLJDBC {
 
         try {
             Class.forName("org.postgresql.Driver");
-            result = DriverManager.getConnection("jdbc:postgresql://localhost:5432/testdb", "postgres", "postgres");
+            result = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "postgres");
+
+            if (!hasCreatedTables) {
+                createTables();
+            }
         }
         catch (Exception e) {
             e.printStackTrace();
@@ -24,6 +31,42 @@ public class PostgreSQLJDBC {
     }
 
     private static void createTables() {
+        System.out.println("je suis dans createTable");
+        hasCreatedTables = true;
+        try {
+            Connection connection = getConnection();
+            Statement statement = connection.createStatement();
+            String sql = """                                                   
+                    CREATE TABLE IF NOT EXISTS Global (
+                        NewConfirmed INT,
+                        TotalConfirmed INT,
+                        NewDeaths INT, 
+                        TotalDeaths INT, 
+                        NewRecovered INT, 
+                        TotalRecovered INT, 
+                        Datemaj TIMESTAMP
+                    );
+                                    
+                    CREATE TABLE IF NOT EXISTS Country (
+                        Country VARCHAR(200) PRIMARY KEY, 
+                        CountryCode VARCHAR(6), 
+                        Slug VARCHAR(200), 
+                        NewConfirmed INT, 
+                        TotalConfirmed INT, 
+                        NewDeaths INT, 
+                        TotalDeaths INT, 
+                        NewRecovered INT, 
+                        TotalRecovered INT, 
+                        Datemaj TIMESTAMP
+                    );
+                    """;
+            statement.executeUpdate(sql);
 
+            statement.close();
+            connection.close();
+        }
+        catch (Exception e) {
+            System.err.println("Impossible de créer les tables : " + e.getMessage());
+        }
     }
 }

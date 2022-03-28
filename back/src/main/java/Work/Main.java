@@ -25,15 +25,15 @@ public class Main {
                 .build();
 
         Trigger trigger = TriggerBuilder.newTrigger()
-                .withIdentity("summaryJob", "group1")
+                .withIdentity("trigger1", "group1")
                 .startNow()
                 .withSchedule(SimpleScheduleBuilder.simpleSchedule()
                         .withIntervalInSeconds(10)
                         .repeatForever())
                 .build();
 
-        scheduler.scheduleJob(job, trigger);
         scheduler.start();
+        scheduler.scheduleJob(job, trigger);
     }
 
 }

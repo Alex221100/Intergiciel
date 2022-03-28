@@ -44,6 +44,19 @@ public class CountryDAO {
     public CountryDAO() {
     }
 
+    public CountryDAO(String country, String countryCode, String slug, int newConfirmed, int totalConfirmed, int newDeaths, int totalDeaths, int newRecovered, int totalRecovered, Date date) {
+        this.country = country;
+        this.countryCode = countryCode;
+        this.slug = slug;
+        this.newConfirmed = newConfirmed;
+        this.totalConfirmed = totalConfirmed;
+        this.newDeaths = newDeaths;
+        this.totalDeaths = totalDeaths;
+        this.newRecovered = newRecovered;
+        this.totalRecovered = totalRecovered;
+        this.date = date;
+    }
+
     public String getId() {
         return id;
     }

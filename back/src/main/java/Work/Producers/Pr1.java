@@ -20,7 +20,7 @@ public class Pr1 {
 
     private Pr1() {
         producer = new KafkaProducer<>(new HashMap<>() {{
-            put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+            put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "10.4.243.198:9092");
             put(ProducerConfig.CLIENT_ID_CONFIG, "cs1");
             put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, LongSerializer.class.getName());
             put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
@@ -36,14 +36,15 @@ public class Pr1 {
     }
 
     public void sendCovidSummary() {
+        System.out.println("je suis dans Pr1");
         APIProvider.getSummaryToJson().subscribe(summary -> {
-                    final ProducerRecord<Long, String> record = new ProducerRecord<Long, String>("Topic1", summary);
-                    try {
-                        producer.send(record).get();
-                    }
-                    catch (ExecutionException | InterruptedException e) {
-                        System.err.println("Erreur dans l'envoi de l'enregistrement : " + e.getMessage());
-                    }
-                });
+            final ProducerRecord<Long, String> record = new ProducerRecord<Long, String>("Topic1", summary);
+            try {
+                producer.send(record).get();
+            }
+            catch (ExecutionException | InterruptedException e) {
+                System.err.println("Erreur dans l'envoi de l'enregistrement : " + e.getMessage());
+            }
+        });
     }
 }
