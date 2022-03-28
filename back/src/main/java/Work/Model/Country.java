@@ -39,9 +39,6 @@ public class Country {
     @JsonProperty("Date")
     private Date date;
 
-    @JsonProperty("Premium")
-    private Object premium;
-
     public Country(CountryDAO countryDAO) {
         this.country = countryDAO.getId();
         this.country = countryDAO.getCountry();
@@ -152,7 +149,6 @@ public class Country {
                 ", newRecovered=" + newRecovered +
                 ", totalRecovered=" + totalRecovered +
                 ", date=" + date +
-                ", premium=" + premium +
                 '}';
     }
 }

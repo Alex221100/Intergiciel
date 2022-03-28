@@ -1,15 +1,13 @@
 package Work;
 
 import Work.Jobs.SummaryJob;
-import Work.Producers.Pr1;
-import org.apache.kafka.clients.consumer.Consumer;
-import org.apache.kafka.clients.consumer.ConsumerRecords;
+import Work.Producers.Pr2;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.util.ArrayList;
 
 
 @SpringBootApplication
@@ -18,7 +16,7 @@ public class Main {
     public static void main(String[] args) throws SchedulerException {
         SpringApplication.run(Main.class, args);
 
-        Scheduler scheduler = new StdSchedulerFactory().getScheduler();
+        /*Scheduler scheduler = new StdSchedulerFactory().getScheduler();
 
         JobDetail job = JobBuilder.newJob(SummaryJob.class)
                 .withIdentity("summaryJob", "group1")
@@ -33,7 +31,9 @@ public class Main {
                 .build();
 
         scheduler.start();
-        scheduler.scheduleJob(job, trigger);
+        scheduler.scheduleJob(job, trigger);*/
+
+        Pr2.getInstance().sendCommand("country, France");
     }
 
 }

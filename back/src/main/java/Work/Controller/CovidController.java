@@ -11,37 +11,37 @@ import org.springframework.web.bind.annotation.RestController;
 public class CovidController {
     @GetMapping(value="/global")
     public ResponseEntity<String> getGlobalValues() {
-        Pr2.getInstance().sendCommand("global");
+        Pr2.getInstance().sendCommand("GLOBAL");
         return ResponseEntity.ok("it works");
     }
 
     @GetMapping(value="/country")
-    public ResponseEntity<String> getCountryValues() {
-        Pr2.getInstance().sendCommand("country");
+    public ResponseEntity<String> getCountryValues(String countryName) {
+        Pr2.getInstance().sendCommand("COUNTRY," + countryName);
         return ResponseEntity.ok("it works");
     }
 
     @GetMapping(value="/confirmedAvg")
     public ResponseEntity<String> getConfirmedAvg() {
-        Pr2.getInstance().sendCommand("confirmedAvg");
+        Pr2.getInstance().sendCommand("CONFIRMEDAVG");
         return ResponseEntity.ok("it works");
     }
 
     @GetMapping(value="/deathsAvg")
     public ResponseEntity<String> getDeathsAvg() {
-        Pr2.getInstance().sendCommand("deathsAvg");
+        Pr2.getInstance().sendCommand("DEATHSAVG");
         return ResponseEntity.ok("it works");
     }
 
     @GetMapping(value="/countriesDeathsPercent")
     public ResponseEntity<String> getCountriesDeathsPercent() {
-        Pr2.getInstance().sendCommand("countriesDeathsPercent");
+        Pr2.getInstance().sendCommand("COUNTRIESDEATHSPERCENT");
         return ResponseEntity.ok("it works");
     }
 
     @GetMapping(value="/export")
     public ResponseEntity<String> getExport() {
-        Pr2.getInstance().sendCommand("export");
+        Pr2.getInstance().sendCommand("EXPORT");
         return ResponseEntity.ok("it works");
     }
 }

@@ -1,6 +1,5 @@
 package Work.Producers;
 
-import Work.APIProvider;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -35,8 +34,8 @@ public class Pr2 {
         return instance;
     }
 
-    public void sendCommand(String command) {
-        final ProducerRecord<Long, String> record = new ProducerRecord<Long, String>("Topic2", command);
+    public void sendCommand(String args) {
+        final ProducerRecord<Long, String> record = new ProducerRecord<>("Topic2", args);
         try {
             producer.send(record).get();
         } catch (ExecutionException | InterruptedException e) {

@@ -95,7 +95,7 @@ public class PostegreSQLRepository {
         try {
             Connection connection = PostgreSQLJDBC.getConnection();
             Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM Countries;");
+            ResultSet rs = stmt.executeQuery("SELECT * FROM Country;");
             while (rs.next()) {
                 result.add(new CountryDAO(
                         rs.getString("Country"),
@@ -122,7 +122,7 @@ public class PostegreSQLRepository {
         try {
             Connection connection = PostgreSQLJDBC.getConnection();
             Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM Countries WHERE Country = " + v_pays + ";");
+            ResultSet rs = stmt.executeQuery("SELECT * FROM Country WHERE Country ILIKE '" + v_pays + "';");
             if (rs.next()) {
                 result = new CountryDAO(
                         rs.getString("Country"),
