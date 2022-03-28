@@ -55,19 +55,6 @@ public class CountryDAO {
         this.date = date;
     }
 
-    public CountryDAO(String country, String countryCode, String slug, int newConfirmed, int totalConfirmed, int newDeaths, int totalDeaths, int newRecovered, int totalRecovered, Date date) {
-        this.country = country;
-        this.countryCode = countryCode;
-        this.slug = slug;
-        this.newConfirmed = newConfirmed;
-        this.totalConfirmed = totalConfirmed;
-        this.newDeaths = newDeaths;
-        this.totalDeaths = totalDeaths;
-        this.newRecovered = newRecovered;
-        this.totalRecovered = totalRecovered;
-        this.date = date;
-    }
-
     public String getId() {
         return id;
     }
@@ -156,20 +143,4 @@ public class CountryDAO {
         this.date = date;
     }
 
-    @Override
-    public String toString() {
-        return "CountryDAO{" +
-                "id='" + id + '\'' +
-                ", country='" + country + '\'' +
-                ", countryCode='" + countryCode + '\'' +
-                ", slug='" + slug + '\'' +
-                ", newConfirmed=" + newConfirmed +
-                ", totalConfirmed=" + totalConfirmed +
-                ", newDeaths=" + newDeaths +
-                ", totalDeaths=" + totalDeaths +
-                ", newRecovered=" + newRecovered +
-                ", totalRecovered=" + totalRecovered +
-                ", date=" + date +
-                '}';
-    }
 }

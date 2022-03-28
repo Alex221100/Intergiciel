@@ -6,59 +6,13 @@ import Data.Model.GlobalDAO;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
 public class PostegreSQLRepository {
 
-    public static void insertGlobal(GlobalDAO globalDao) {
-        String sql = "INSERT INTO Global(newconfirmed, totalconfirmed, newdeaths, totaldeaths, newrecovered, totalrecovered) " +
-                String.format("VALUES (%d, %d, %d, %d, %d, %d)", globalDao.getNewConfirmed(), globalDao.getTotalConfirmed(),
-                        globalDao.getNewDeaths(), globalDao.getTotalDeaths(), globalDao.getNewRecovered(), globalDao.getTotalRecovered());
-        System.out.println(sql);
-
-        try {
-            Connection connection = PostgreSQLJDBC.getConnection();
-            Statement statement = connection.createStatement();
-
-            statement.executeUpdate(sql);
-
-            statement.close();
-            connection.close();
-        }
-        catch(SQLException e) {
-            System.out.println(e.getMessage());
-        }
-    }
-
-    public static void insertCountries(List<CountryDAO> countriesDAO) throws SQLException {
-        System.out.println("je suis dans insertCountry");
-
-        try {
-            Connection connection = PostgreSQLJDBC.getConnection();
-            Statement statement = connection.createStatement();
-            for (CountryDAO countryDAO : countriesDAO) {
-                String sql = "INSERT INTO Country(country, countrycode, slug, newconfirmed, totalconfirmed, newdeaths, " +
-                        "totaldeaths, newrecovered, totalrecovered) " +
-                        String.format("VALUES (%s, %s, %s, %d, %d, %d, %d, %d, %d)", countryDAO.getCountry(),
-                                countryDAO.getCountryCode(), countryDAO.getSlug(), countryDAO.getNewConfirmed(),
-                                countryDAO.getTotalConfirmed(), countryDAO.getNewDeaths(), countryDAO.getTotalDeaths(),
-                                countryDAO.getNewRecovered(), countryDAO.getTotalRecovered());
-                System.out.println(sql);
-
-                statement.executeUpdate(sql);
-            }
-
-            statement.close();
-            connection.close();
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-        }
-    }
-
-    /*public static GlobalDAO getGlobal() {
+    public static GlobalDAO getGlobal() {
         GlobalDAO result = null;
 
         try {
@@ -85,7 +39,7 @@ public class PostegreSQLRepository {
         return result;
     }
 
-    /*public static List<CountryDAO> getCountries() {
+    public static List<CountryDAO> getCountries() {
         List<CountryDAO> result = new ArrayList<>();
 
         try {
@@ -145,7 +99,17 @@ public class PostegreSQLRepository {
         }
 
         return result;
-    }*/
+    }
 
+    public static int insertSummary() {
+        return 0;
+    }
 
+    private static int insertGlobal() {
+        return 0;
+    }
+
+    private static int insertCountry() {
+        return 0;
+    }
 }

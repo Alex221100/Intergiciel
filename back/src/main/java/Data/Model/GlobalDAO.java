@@ -94,17 +94,4 @@ public class GlobalDAO {
     public void setDate(Date date) {
         this.date = date;
     }
-
-    @Override
-    public String toString() {
-        return "GlobalDAO{" +
-                "newConfirmed=" + newConfirmed +
-                ", totalConfirmed=" + totalConfirmed +
-                ", newDeaths=" + newDeaths +
-                ", totalDeaths=" + totalDeaths +
-                ", newRecovered=" + newRecovered +
-                ", totalRecovered=" + totalRecovered +
-                ", date=" + date +
-                '}';
-    }
 }

@@ -1,49 +1,23 @@
 package Work.Model;
 
 import Data.Model.CountryDAO;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.Date;
 
 public class Country {
-    @JsonProperty("ID")
-    private String id;
-
-    @JsonProperty("Country")
     private String country;
-
-    @JsonProperty("CountryCode")
     private String countryCode;
-
-    @JsonProperty("Slug")
     private String Slug;
-
-    @JsonProperty("NewConfirmed")
     private int newConfirmed;
-
-    @JsonProperty("TotalConfirmed")
     private int totalConfirmed;
-
-    @JsonProperty("NewDeaths")
     private int newDeaths;
-
-    @JsonProperty("TotalDeaths")
     private int totalDeaths;
-
-    @JsonProperty("NewRecovered")
     private int newRecovered;
-
-    @JsonProperty("TotalRecovered")
     private int totalRecovered;
-
-    @JsonProperty("Date")
     private Date date;
 
-    @JsonProperty("Premium")
-    private Object premium;
-
     public Country(CountryDAO countryDAO) {
-        this.country = countryDAO.getId();
         this.country = countryDAO.getCountry();
         this.countryCode = countryDAO.getCountryCode();
         this.Slug = countryDAO.getSlug();
@@ -55,8 +29,6 @@ public class Country {
         this.totalRecovered = countryDAO.getTotalRecovered();
         this.date = countryDAO.getDate();
     }
-
-    public Country(){}
 
     public String getCountry() {
         return country;
@@ -138,21 +110,4 @@ public class Country {
         this.date = date;
     }
 
-    @Override
-    public String toString() {
-        return "Country{" +
-                "id='" + id + '\'' +
-                ", country='" + country + '\'' +
-                ", countryCode='" + countryCode + '\'' +
-                ", Slug='" + Slug + '\'' +
-                ", newConfirmed=" + newConfirmed +
-                ", totalConfirmed=" + totalConfirmed +
-                ", newDeaths=" + newDeaths +
-                ", totalDeaths=" + totalDeaths +
-                ", newRecovered=" + newRecovered +
-                ", totalRecovered=" + totalRecovered +
-                ", date=" + date +
-                ", premium=" + premium +
-                '}';
-    }
 }

@@ -11,7 +11,7 @@ import java.io.IOException;
 @Service
 public class Cs2 {
 
-    /*@KafkaListener(topics = "Topic2", groupId = "group2")
+    @KafkaListener(topics = "Topic2", groupId = "group2")
     public void consume(String message) throws IOException {
 
         System.out.println("J'ai reçu : " + message);
@@ -49,6 +49,6 @@ public class Cs2 {
 
     private static void getExport() {
 
-    }*/
+    }
 
 }

@@ -1,30 +1,17 @@
 package Work.Model;
 
 import Data.Model.GlobalDAO;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.Date;
 
 public class Global {
-    @JsonProperty("NewConfirmed")
     private int newConfirmed;
-
-    @JsonProperty("TotalConfirmed")
     private int totalConfirmed;
-
-    @JsonProperty("NewDeaths")
     private int newDeaths;
-
-    @JsonProperty("TotalDeaths")
     private int totalDeaths;
-
-    @JsonProperty("NewRecovered")
     private int newRecovered;
-
-    @JsonProperty("TotalRecovered")
     private int totalRecovered;
-
-    @JsonProperty("Date")
     private Date date;
 
     public Global(GlobalDAO globalDAO) {
@@ -36,8 +23,6 @@ public class Global {
         totalRecovered = globalDAO.getTotalRecovered();
         date = globalDAO.getDate();
     }
-
-    public Global(){}
 
     public int getNewConfirmed() {
         return newConfirmed;
@@ -93,18 +78,5 @@ public class Global {
 
     public void setDate(Date date) {
         this.date = date;
-    }
-
-    @Override
-    public String toString() {
-        return "Global{" +
-                "newConfirmed=" + newConfirmed +
-                ", totalConfirmed=" + totalConfirmed +
-                ", newDeaths=" + newDeaths +
-                ", totalDeaths=" + totalDeaths +
-                ", newRecovered=" + newRecovered +
-                ", totalRecovered=" + totalRecovered +
-                ", date=" + date +
-                '}';
     }
 }

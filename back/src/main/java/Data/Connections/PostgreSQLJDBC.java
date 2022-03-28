@@ -17,9 +17,9 @@ public class PostgreSQLJDBC {
             Class.forName("org.postgresql.Driver");
             result = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "postgres");
 
-            //if (!hasCreatedTables) {
+            if (!hasCreatedTables) {
                 createTables();
-            //}
+            }
         }
         catch (Exception e) {
             e.printStackTrace();
@@ -43,7 +43,7 @@ public class PostgreSQLJDBC {
                         TotalDeaths INT, 
                         NewRecovered INT, 
                         TotalRecovered INT, 
-                        Datemaj TIMESTAMP
+                        Datemaj TIMESTAMP PRIMARY KEY
                     );
                                     
                     CREATE TABLE IF NOT EXISTS Country (
