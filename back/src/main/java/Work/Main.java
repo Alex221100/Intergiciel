@@ -36,7 +36,7 @@ public class Main {
         scheduler.scheduleJob(job, trigger);
         scheduler.start();
 
-        Pr2.getInstance().sendCommand("global");
+        //Pr2.getInstance().sendCommand("global");
     }
 
 }
