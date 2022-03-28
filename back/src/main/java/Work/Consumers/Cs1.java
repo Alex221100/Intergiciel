@@ -14,9 +14,9 @@ public class Cs1 {
 
     @KafkaListener(topics = "Topic1", groupId = "group1")
     public void consume(String message) throws IOException {
-        /*ObjectMapper objectMapper = new ObjectMapper();
+        ObjectMapper objectMapper = new ObjectMapper();
         Reader reader = new StringReader(message);
         Summary summary = objectMapper.readValue(reader, Summary.class);
-        System.out.println(summary);*/
+        System.out.println(summary);
     }
 }

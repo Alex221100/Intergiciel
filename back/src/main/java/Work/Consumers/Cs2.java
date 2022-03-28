@@ -1,6 +1,7 @@
 package Work.Consumers;
 
 import Data.Requests.PostegreSQLRepository;
+import Data.Model.CountryDAO;
 import Work.Model.Country;
 import Work.Model.Global;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -15,36 +16,28 @@ public class Cs2 {
     public void consume(String message) throws IOException {
 
         System.out.println("J'ai reçu : " + message);
-
-        switch(message) {
-            case "GLOBAL":
-                getGlobal();
-                break;
-
-            default:
-                System.err.println("Commande inconnue : " + message);
-                break;
-        }
     }
 
-    private static void getGlobal() {
-        Global result = new Global(PostegreSQLRepository.getGlobal());
+    private static Global getGlobal() {
+        PostegreSQLRepository.getGlobal();
+        return null;
     }
 
-    private static void getCountry(String v_pays) {
-        Country result = new Country(PostegreSQLRepository.getCountry(v_pays));
+    private static Country getCountry(String v_pays) {
+        PostegreSQLRepository.getCountry(v_pays);
+        return null;
     }
 
-    private static void getConfirmedAvg() {
-
+    private static int getConfirmedAvg() {
+        return 0;
     }
 
-    private static void getDeathsAvg() {
-
+    private static int getDeathsAvg() {
+        return 0;
     }
 
-    private static void getCountriesDeathsPercent() {
-
+    private static int getCountriesDeathsPercent() {
+        return 0;
     }
 
     private static void getExport() {
