@@ -3,7 +3,7 @@ package Work.Model;
 import Data.Model.GlobalDAO;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 public class Global {
     @JsonProperty("NewConfirmed")
@@ -25,7 +25,7 @@ public class Global {
     private int totalRecovered;
 
     @JsonProperty("Date")
-    private Date date;
+    private Timestamp date;
 
     public Global(GlobalDAO globalDAO) {
         newConfirmed = globalDAO.getNewConfirmed();
@@ -87,11 +87,11 @@ public class Global {
         this.totalRecovered = totalRecovered;
     }
 
-    public Date getDate() {
+    public Timestamp getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(Timestamp date) {
         this.date = date;
     }
 

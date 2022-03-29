@@ -35,6 +35,7 @@ public class Pr2 {
     }
 
     public void sendCommand(String args) {
+        System.out.println("je suis dans la Pr2");
         final ProducerRecord<Long, String> record = new ProducerRecord<>("Topic2", args);
         try {
             producer.send(record).get();

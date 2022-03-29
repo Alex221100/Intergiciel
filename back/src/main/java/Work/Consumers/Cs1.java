@@ -25,7 +25,7 @@ public class Cs1 {
         ObjectMapper objectMapper = new ObjectMapper();
         Reader reader = new StringReader(message);
         Summary summary = objectMapper.readValue(reader, Summary.class);
-        System.out.println(summary);
+
         List<CountryDAO> countriesDAO = new ArrayList<>();
 
         for (Country country : summary.getCountries()){

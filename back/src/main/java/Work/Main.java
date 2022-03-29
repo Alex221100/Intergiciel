@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[] args) throws SchedulerException {
         SpringApplication.run(Main.class, args);
 
-        /*Scheduler scheduler = new StdSchedulerFactory().getScheduler();
+        Scheduler scheduler = new StdSchedulerFactory().getScheduler();
 
         JobDetail job = JobBuilder.newJob(SummaryJob.class)
                 .withIdentity("summaryJob", "group1")
@@ -31,9 +31,9 @@ public class Main {
                 .build();
 
         scheduler.start();
-        scheduler.scheduleJob(job, trigger);*/
+        scheduler.scheduleJob(job, trigger);
 
-        Pr2.getInstance().sendCommand("country, France");
+        //Pr2.getInstance().sendCommand("country, France");
     }
 
 }

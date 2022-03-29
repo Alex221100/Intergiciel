@@ -3,7 +3,7 @@ package Data.Model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CountryDAO {
@@ -39,12 +39,12 @@ public class CountryDAO {
     private int totalRecovered;
 
     @JsonProperty("Date")
-    private Date date;
+    private Timestamp date;
 
     public CountryDAO() {
     }
 
-    public CountryDAO(String country, String countryCode, String slug, int newConfirmed, int totalConfirmed, int newDeaths, int totalDeaths, int newRecovered, int totalRecovered, Date date) {
+    public CountryDAO(String country, String countryCode, String slug, int newConfirmed, int totalConfirmed, int newDeaths, int totalDeaths, int newRecovered, int totalRecovered, Timestamp date) {
         this.country = country;
         this.countryCode = countryCode;
         this.slug = slug;
@@ -137,11 +137,11 @@ public class CountryDAO {
         this.totalRecovered = totalRecovered;
     }
 
-    public Date getDate() {
+    public Timestamp getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(Timestamp date) {
         this.date = date;
     }
 

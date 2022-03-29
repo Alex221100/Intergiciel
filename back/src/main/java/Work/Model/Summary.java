@@ -3,6 +3,7 @@ package Work.Model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.sql.Timestamp;
 import java.util.Date;
 import java.util.List;
 
@@ -19,7 +20,7 @@ public class Summary {
     private List<Country> countries;
 
     @JsonProperty("Date")
-    private Date date;
+    private Timestamp date;
 
     public Summary() {
     }
@@ -48,11 +49,11 @@ public class Summary {
         this.countries = countries;
     }
 
-    public Date getDate() {
+    public Timestamp getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(Timestamp date) {
         this.date = date;
     }
 

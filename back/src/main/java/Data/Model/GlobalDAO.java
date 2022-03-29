@@ -3,6 +3,7 @@ package Data.Model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -27,12 +28,12 @@ public class GlobalDAO {
     private int totalRecovered;
 
     @JsonProperty("Date")
-    private Date date;
+    private Timestamp date;
 
     public GlobalDAO() {
     }
 
-    public GlobalDAO(int newConfirmed, int totalConfirmed, int newDeaths, int totalDeaths, int newRecovered, int totalRecovered, java.util.Date date) {
+    public GlobalDAO(int newConfirmed, int totalConfirmed, int newDeaths, int totalDeaths, int newRecovered, int totalRecovered, Timestamp date) {
         this.newConfirmed = newConfirmed;
         this.totalConfirmed = totalConfirmed;
         this.newDeaths = newDeaths;
@@ -90,11 +91,11 @@ public class GlobalDAO {
         this.totalRecovered = totalRecovered;
     }
 
-    public Date getDate() {
+    public Timestamp getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(Timestamp date) {
         this.date = date;
     }
 }

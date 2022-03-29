@@ -21,14 +21,14 @@ public class Cs2 {
     public void consume(String args) {
 
         String command = args.split(",")[0].trim().toUpperCase(Locale.ROOT);
-        String parameters = args.split(",")[1].trim().replace(" ", "").toUpperCase(Locale.ROOT);
+        //String parameters = args.split(",")[1].trim().replace(" ", "").toUpperCase(Locale.ROOT);
 
         System.out.println("J'ai reçu : " + command);
 
         Object result = null;
         switch (command) {
             case "GLOBAL" -> result = getGlobal();
-            case "COUNTRY" -> result = getCountry(parameters.split(",", 30)[0]);
+            //case "COUNTRY" -> result = getCountry(parameters.split(",", 30)[0]);
             case "CONFIRMEDAVG" -> result = getConfirmedAvg();
             case "DEATHSAVG" -> result = getDeathsAvg();
             case "COUNTRIESDEATHSPERCENT" -> result = getCountriesDeathsPercent();
@@ -41,7 +41,8 @@ public class Cs2 {
         }
     }
 
-    private static Global getGlobal() {
+    public static Global getGlobal() {
+        System.out.println("je suis dans getGlobal Cs2");
         return new Global(PostegreSQLRepository.getGlobal());
     }
 

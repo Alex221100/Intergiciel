@@ -14,11 +14,10 @@ import java.util.List;
 public class PostegreSQLRepository {
 
     public static void insertGlobal(GlobalDAO globalDao) {
-        String sql = "INSERT INTO Global(newconfirmed, totalconfirmed, newdeaths, totaldeaths, newrecovered, totalrecovered) " +
-                String.format("VALUES (%d, %d, %d, %d, %d, %d)"
-                        , globalDao.getNewConfirmed(), globalDao.getTotalConfirmed(),
+        String sql = "INSERT INTO Global(newconfirmed, totalconfirmed, newdeaths, totaldeaths, newrecovered, totalrecovered, dateMaj) " +
+                String.format("VALUES (%d, %d, %d, %d, %d, %d, '" + globalDao.getDate()
+                                + "')"                        , globalDao.getNewConfirmed(), globalDao.getTotalConfirmed(),
                         globalDao.getNewDeaths(), globalDao.getTotalDeaths(), globalDao.getNewRecovered(), globalDao.getTotalRecovered());
-        System.out.println(sql);
 
         try {
             Connection connection = PostgreSQLJDBC.getConnection();
@@ -42,19 +41,19 @@ public class PostegreSQLRepository {
             Statement statement = connection.createStatement();
             for (CountryDAO countryDAO : countriesDAO) {
                 String sql = "INSERT INTO Country(country, countrycode, slug, newconfirmed, totalconfirmed, newdeaths, " +
-                        "totaldeaths, newrecovered, totalrecovered) " +
-                        String.format("VALUES ('%s', '%s', '%s', %d, %d, %d, %d, %d, %d) " +
-                                        "ON CONFLICT (country) DO UPDATE " +
+                        "totaldeaths, newrecovered, totalrecovered, dateMaj) " +
+                        String.format("VALUES ('%s', '%s', '%s', %d, %d, %d, %d, %d, %d, '" + countryDAO.getDate() +
+                                        "') ON CONFLICT (country) DO UPDATE " +
                                         "SET newconfirmed = EXCLUDED.newconfirmed," +
                                         "totalconfirmed = EXCLUDED.totalconfirmed," +
                                         "newdeaths = EXCLUDED.newdeaths," +
                                         "totaldeaths = EXCLUDED.totaldeaths," +
                                         "newrecovered = EXCLUDED.newrecovered," +
-                                        "totalrecovered = EXCLUDED.totalrecovered;", countryDAO.getCountry().replace("'", "''"),
+                                        "totalrecovered = EXCLUDED.totalrecovered," +
+                                        "dateMaj = EXCLUDED.dateMaj;", countryDAO.getCountry().replace("'", "''"),
                                 countryDAO.getCountryCode(), countryDAO.getSlug(), countryDAO.getNewConfirmed(),
                                 countryDAO.getTotalConfirmed(), countryDAO.getNewDeaths(), countryDAO.getTotalDeaths(),
                                 countryDAO.getNewRecovered(), countryDAO.getTotalRecovered());
-                System.out.println(sql);
 
                 statement.executeUpdate(sql);
             }
@@ -80,7 +79,7 @@ public class PostegreSQLRepository {
                         rs.getInt("TotalDeaths"),
                         rs.getInt("NewRecovered"),
                         rs.getInt("TotalRecovered"),
-                        rs.getDate("Date")
+                        rs.getTimestamp("Datemaj")
                 );
             }
         }
@@ -107,7 +106,7 @@ public class PostegreSQLRepository {
                         rs.getInt("TotalDeaths"),
                         rs.getInt("NewRecovered"),
                         rs.getInt("TotalRecovered"),
-                        rs.getDate("Date")
+                        rs.getTimestamp("Datemaj")
                 ));
             }
         }
@@ -134,7 +133,7 @@ public class PostegreSQLRepository {
                         rs.getInt("TotalDeaths"),
                         rs.getInt("NewRecovered"),
                         rs.getInt("TotalRecovered"),
-                        rs.getDate("Date")
+                        rs.getTimestamp("Datemaj")
                 );
             }
         }

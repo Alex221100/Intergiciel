@@ -3,6 +3,7 @@ package Work.Model;
 import Data.Model.CountryDAO;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 public class Country {
@@ -37,10 +38,12 @@ public class Country {
     private int totalRecovered;
 
     @JsonProperty("Date")
-    private Date date;
+    private Timestamp date;
+
+    @JsonProperty("Premium")
+    private Object premium;
 
     public Country(CountryDAO countryDAO) {
-        this.country = countryDAO.getId();
         this.country = countryDAO.getCountry();
         this.countryCode = countryDAO.getCountryCode();
         this.Slug = countryDAO.getSlug();
@@ -127,11 +130,11 @@ public class Country {
         this.totalRecovered = totalRecovered;
     }
 
-    public Date getDate() {
+    public Timestamp getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(Timestamp date) {
         this.date = date;
     }
 
