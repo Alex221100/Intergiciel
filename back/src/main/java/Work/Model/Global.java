@@ -1,10 +1,12 @@
 package Work.Model;
 
 import Data.Model.GlobalDAO;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.sql.Timestamp;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Global {
     @JsonProperty("NewConfirmed")
     private int newConfirmed;

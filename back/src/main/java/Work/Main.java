@@ -1,5 +1,6 @@
 package Work;
 
+import Work.Config.EnumCommand;
 import Work.Jobs.SummaryJob;
 import Work.Producers.Pr2;
 import org.quartz.*;
@@ -32,8 +33,6 @@ public class Main {
 
         scheduler.start();
         scheduler.scheduleJob(job, trigger);
-
-        //Pr2.getInstance().sendCommand("country, France");
     }
 
 }

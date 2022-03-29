@@ -1,5 +1,6 @@
 package Work.Producers;
 
+import Work.Config.EnumCommand;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -8,13 +9,13 @@ import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 
 @Service
 public class Pr2 {
 
-    private static Pr2 instance = null;
     private static KafkaProducer<Long, String> producer = null;
 
     private Pr2() {
@@ -26,21 +27,23 @@ public class Pr2 {
         }});
     }
 
-    public static Pr2 getInstance() {
-        if (instance == null) {
-            instance = new Pr2();
+    private void sendCommand(String data) {
+        try {
+            final ProducerRecord<Long, String> record = new ProducerRecord<>("Topic2", data);
+            producer.send(record).get();
         }
+        catch (ExecutionException | InterruptedException e) {
 
-        return instance;
+            System.err.println("Erreur dans l'envoi de l'enregistrement : " + e.getMessage());
+
+        }
     }
 
-    public void sendCommand(String args) {
-        System.out.println("je suis dans la Pr2");
-        final ProducerRecord<Long, String> record = new ProducerRecord<>("Topic2", args);
-        try {
-            producer.send(record).get();
-        } catch (ExecutionException | InterruptedException e) {
-            System.err.println("Erreur dans l'envoi de l'enregistrement : " + e.getMessage());
-        }
+    public void sendCommand(EnumCommand command) {
+        sendCommand(command.toString());
+    }
+
+    public void sendCommandWithParameters(EnumCommand command, List<String> parameters) {
+        sendCommand(command.toString() + "," + String.join(",", parameters));
     }
 }

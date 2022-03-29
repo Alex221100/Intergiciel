@@ -1,51 +1,45 @@
 package Work.Consumers;
 
-import Data.Requests.PostegreSQLRepository;
 import Data.Model.CountryDAO;
+import Data.Requests.PostegreSQLRepository;
 import Work.Model.Country;
 import Work.Model.Global;
 import Work.Producers.Pr3;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
-import java.beans.XMLEncoder;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class Cs2 {
 
+    @Autowired
+    private Pr3 pr3;
+
     @KafkaListener(topics = "Topic2", groupId = "group2")
-    public void consume(String args) throws FileNotFoundException {
-
-        String command = args.split(",")[0].trim().toUpperCase(Locale.ROOT);
-        //String parameters = args.split(",")[1].trim().replace(" ", "").toUpperCase(Locale.ROOT);
-
-        System.out.println("J'ai reçu : " + command);
+    public void consume(String data) throws IOException {
+        String command = data.contains(",") ? data.split(",")[0] : data;
+        List<String> parameters = data.contains(",") ? Arrays.asList(data.split(",").clone()).subList(1, data.split(",").length) : new ArrayList<>();
 
         Object result = null;
-        switch (command) {
+        switch (command.toUpperCase(Locale.ROOT).trim()) {
             case "GLOBAL" -> result = getGlobal();
-            //case "COUNTRY" -> result = getCountry(parameters.split(",", 30)[0]);
+            case "COUNTRY" -> result = getCountry(parameters.get(0));
             case "CONFIRMEDAVG" -> result = getConfirmedAvg();
             case "DEATHSAVG" -> result = getDeathsAvg();
             case "COUNTRIESDEATHSPERCENT" -> result = getCountriesDeathsPercent();
-            case "EXPORT" -> getExport();
+            case "EXPORT" -> result = getExport();
             default -> System.err.println("Commande inconnue : " + command);
         }
 
         if (result != null) {
-            Pr3.getInstance().displayResult(result);
+            pr3.displayResult(result);
         }
     }
 
     public static Global getGlobal() {
-        System.out.println("je suis dans getGlobal Cs2");
         return new Global(PostegreSQLRepository.getGlobal());
     }
 
@@ -83,19 +77,8 @@ public class Cs2 {
         return result;
     }
 
-    private static void getExport() throws FileNotFoundException {
-
-        List<CountryDAO> countries = PostegreSQLRepository.getCountries();
-        XMLEncoder encoder = new XMLEncoder(new FileOutputStream("test"));
-        try {
-            for (CountryDAO country : countries) {
-                encoder.writeObject(country);
-                encoder.flush();
-            }
-        } finally {
-            // fermeture de l'encodeur
-            encoder.close();
-        }
+    private static Object getExport() {
+        return null;
     }
 
 }

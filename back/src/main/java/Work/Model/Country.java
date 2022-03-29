@@ -1,11 +1,13 @@
 package Work.Model;
 
 import Data.Model.CountryDAO;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.sql.Timestamp;
 import java.util.Date;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Country {
     @JsonProperty("ID")
     private String id;
@@ -39,9 +41,6 @@ public class Country {
 
     @JsonProperty("Date")
     private Timestamp date;
-
-    @JsonProperty("Premium")
-    private Object premium;
 
     public Country(CountryDAO countryDAO) {
         this.country = countryDAO.getCountry();
