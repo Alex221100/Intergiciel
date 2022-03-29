@@ -11,7 +11,7 @@
             <div>
               <v-row>
                 <v-col>
-                  <code>nom de la route</code><br/>
+                  <code>localhost:8080/global</code><br/>
                   <v-btn elevation="2" @click="getGlobalValues">Lancer</v-btn>
                 </v-col>
                 <v-col class=terminal>{{globalValues}}</v-col>
@@ -31,7 +31,7 @@
             <div>
               <v-row>
                 <v-col>
-                  <code>nom de la route</code><br/>
+                  <code>localhost:8080/country</code><br/>
                   <v-btn elevation="2" @click="getCountryValues">Lancer</v-btn>
                 </v-col>
                 <v-col class=terminal>{{countryValues}}</v-col>
@@ -51,7 +51,7 @@
             <div>
               <v-row>
                 <v-col>
-                  <code>nom de la route</code><br/>
+                  <code>localhost:8080/confirmedAvg</code><br/>
                   <v-btn elevation="2" @click="getConfirmedAvg">Lancer</v-btn>
                 </v-col>
                 <v-col class=terminal>{{confirmedAvg}}</v-col>
@@ -71,18 +71,10 @@
             <div>
               <v-row>
                 <v-col>
-                  <code>nom de la route</code><br/>
-                  <v-btn elevation="2">Lancer</v-btn>
+                  <code>localhost:8080/deathsAvg</code><br/>
+                  <v-btn elevation="2" @click="getDeathsAvg">Lancer</v-btn>
                 </v-col>
-                <v-col class=terminal>"Global": {<br/>
-        "NewConfirmed": 833541,<br/>
-        "TotalConfirmed": 449107234,<br/>
-        "NewDeaths": 5011,<br/>
-        "TotalDeaths": 6010103,<br/>
-        "NewRecovered": 0,<br/>
-        "TotalRecovered": 0,<br/>
-        "Date": "2022-03-09T18:19:51.473Z"<br/>
-    },<br/></v-col>
+                <v-col class=terminal>{{deathsAvg}}</v-col>
               </v-row>
             </div>
           </v-card-text>
@@ -99,18 +91,10 @@
             <div>
               <v-row>
                 <v-col>
-                  <code>nom de la route</code><br/>
-                  <v-btn elevation="2">Lancer</v-btn>
+                  <code>localhost:8080/countriesDeathsPercent</code><br/>
+                  <v-btn elevation="2" @click="getCountriesDeathsPercent">Lancer</v-btn>
                 </v-col>
-                <v-col class=terminal>"Global": {<br/>
-        "NewConfirmed": 833541,<br/>
-        "TotalConfirmed": 449107234,<br/>
-        "NewDeaths": 5011,<br/>
-        "TotalDeaths": 6010103,<br/>
-        "NewRecovered": 0,<br/>
-        "TotalRecovered": 0,<br/>
-        "Date": "2022-03-09T18:19:51.473Z"<br/>
-    },<br/></v-col>
+                <v-col class=terminal>{{countriesDeathsPercent}}</v-col>
               </v-row>
             </div>
           </v-card-text>
@@ -126,21 +110,65 @@ export default {
     return{
       globalValues: null,
       countryValues: null,
-      confirmedAvg: null
+      confirmedAvg: null,
+      deathsAvg: null,
+      countriesDeathsPercent: null,
+      export: null
     }
   },
   methods:{
     async getGlobalValues(){
-      const response = await covidService.getGlobalValues();
-      this.globalValues = response;
+      try{
+        const response = await covidService.getGlobalValues();
+        this.globalValues = response.data;
+      } catch (error) {
+        console.log(error);
+      }
     },
+
     async getCountryValues(){
+      try{
       const response = await covidService.getCountryValues();
-      this.countryValues = response;
+      this.countryValues = response.data;
+      } catch (error) {
+        console.log(error);
+      }
     },
+
     async getConfirmedAvg(){
-      const response = await covidService.getConfirmedAvg();
-      this.confirmedAvg = response;
+      try{
+        const response = await covidService.getConfirmedAvg();
+        this.confirmedAvg = response.data;
+      } catch (error) {
+        console.log(error);
+      }
+    },
+
+    async getDeathsAvg(){
+      try{
+        const response = await covidService.getDeathsAvg();
+        this.deathsAvg = response.data;
+      } catch (error) {
+        console.log(error);
+      }
+    },
+
+    async getCountriesDeathsPercent(){
+      try{
+        const response = await covidService.getCountriesDeathsPercent();
+        this.countriesDeathsPercent = response.data;
+      } catch (error) {
+        console.log(error);
+      }
+    },
+
+    async getExport(){
+      try{
+        const response = await covidService.getExport();
+        this.countriesDeathsPercent = response.data;
+      } catch (error) {
+        console.log(error);
+      }
     }
   }
 }

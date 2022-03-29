@@ -1,3 +1,8 @@
+import { defaultConfig } from "../httpConfig";
+import axios from 'axios';
+
+const baseUrl = "http://localhost:8080";
+
 /**
  * Covid API.
  */
@@ -6,50 +11,41 @@ export default class covidApi {
      * Gets global values.
      */
     static async getGlobalValues() {
-        return {
-            "Global": {
-                "NewConfirmed": 833541,
-                "TotalConfirmed": 449107234,
-                "NewDeaths": 5011,
-                "TotalDeaths": 6010103,
-                "NewRecovered": 0,
-                "TotalRecovered": 0,
-                "Date": "2022-03-09T18:19:51.473Z"
-            },
-        };
+        return axios.get(`${baseUrl}/global`, defaultConfig);
     }
 
     /**
      * Gets country values.
      */
      static async getCountryValues() {
-        return {
-            "Global": {
-                "NewConfirmed": 833541,
-                "TotalConfirmed": 449107234,
-                "NewDeaths": 5011,
-                "TotalDeaths": 6010103,
-                "NewRecovered": 0,
-                "TotalRecovered": 0,
-                "Date": "2022-03-09T18:19:51.473Z"
-            },
-        };
+        return axios.get(`${baseUrl}/country`, defaultConfig);
     }
 
     /**
-     * Gets confirmed avg.
+     * Gets confirmed average.
      */
      static async getConfirmedAvg() {
-        return {
-            "Global": {
-                "NewConfirmed": 833541,
-                "TotalConfirmed": 449107234,
-                "NewDeaths": 5011,
-                "TotalDeaths": 6010103,
-                "NewRecovered": 0,
-                "TotalRecovered": 0,
-                "Date": "2022-03-09T18:19:51.473Z"
-            },
-        };
+        return axios.get(`${baseUrl}/confirmedAvg`, defaultConfig);
+    }
+
+    /**
+     * Gets deaths average.
+     */
+     static async getDeathsAvg() {
+        return axios.get(`${baseUrl}/deathsAvg`, defaultConfig);
+    }
+
+    /**
+     * Gets countries deaths percent.
+     */
+     static async getCountriesDeathsPercent() {
+        return axios.get(`${baseUrl}/countriesDeathsPercent`, defaultConfig);
+    }
+
+    /**
+     * Gets export.
+     */
+     static async getExport() {
+        return axios.get(`${baseUrl}/export`, defaultConfig);
     }
 }

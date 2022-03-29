@@ -25,4 +25,25 @@ export default class covidService {
      static async getConfirmedAvg() {
         return await covidApi.getConfirmedAvg();
     }
+
+    /**
+     * Gets deaths average.
+     */
+     static async getDeathsAvg() {
+        return await covidApi.getDeathsAvg();
+    }
+
+    /**
+     * Gets countries deaths percent.
+     */
+     static async getCountriesDeathsPercent() {
+        return await covidApi.getCountriesDeathsPercent();
+    }
+
+    /**
+     * Gets export.
+     */
+     static async getExport() {
+        return await covidApi.getExport();
+    }
 }
