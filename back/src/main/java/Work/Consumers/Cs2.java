@@ -8,6 +8,9 @@ import Work.Producers.Pr3;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
+import java.beans.XMLEncoder;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
@@ -18,7 +21,7 @@ import java.util.Map;
 public class Cs2 {
 
     @KafkaListener(topics = "Topic2", groupId = "group2")
-    public void consume(String args) {
+    public void consume(String args) throws FileNotFoundException {
 
         String command = args.split(",")[0].trim().toUpperCase(Locale.ROOT);
         //String parameters = args.split(",")[1].trim().replace(" ", "").toUpperCase(Locale.ROOT);
@@ -32,7 +35,7 @@ public class Cs2 {
             case "CONFIRMEDAVG" -> result = getConfirmedAvg();
             case "DEATHSAVG" -> result = getDeathsAvg();
             case "COUNTRIESDEATHSPERCENT" -> result = getCountriesDeathsPercent();
-            case "EXPORT" -> result = getExport();
+            case "EXPORT" -> getExport();
             default -> System.err.println("Commande inconnue : " + command);
         }
 
@@ -80,8 +83,19 @@ public class Cs2 {
         return result;
     }
 
-    private static Object getExport() {
-        return null;
+    private static void getExport() throws FileNotFoundException {
+
+        List<CountryDAO> countries = PostegreSQLRepository.getCountries();
+        XMLEncoder encoder = new XMLEncoder(new FileOutputStream("test"));
+        try {
+            for (CountryDAO country : countries) {
+                encoder.writeObject(country);
+                encoder.flush();
+            }
+        } finally {
+            // fermeture de l'encodeur
+            encoder.close();
+        }
     }
 
 }

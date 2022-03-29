@@ -5,6 +5,7 @@ import Work.Producers.Pr2;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -12,14 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class CovidController {
     @GetMapping(value="/global")
     public ResponseEntity<String> getGlobalValues() {
-        System.out.println("je suis dans CovidController");
         Pr2.getInstance().sendCommand("GLOBAL");
         return ResponseEntity.ok("it works");
     }
 
     @GetMapping(value="/country")
-    public ResponseEntity<String> getCountryValues(String countryName) {
-        //Pr2.getInstance().sendCommand("COUNTRY," + countryName);
+    public ResponseEntity<String> getCountryValues(@RequestParam String countryName) {
+        Pr2.getInstance().sendCommand("COUNTRY," + countryName);
         return ResponseEntity.ok("it works");
     }
 
@@ -43,7 +43,7 @@ public class CovidController {
 
     @GetMapping(value="/export")
     public ResponseEntity<String> getExport() {
-        //Pr2.getInstance().sendCommand("EXPORT");
+        Pr2.getInstance().sendCommand("EXPORT");
         return ResponseEntity.ok("it works");
     }
 }

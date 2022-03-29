@@ -26,7 +26,7 @@ public class Main {
                 .withIdentity("trigger1", "group1")
                 .startNow()
                 .withSchedule(SimpleScheduleBuilder.simpleSchedule()
-                        .withIntervalInSeconds(10)
+                        .withIntervalInMinutes(30)
                         .repeatForever())
                 .build();
 

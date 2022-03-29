@@ -7,13 +7,8 @@ import java.io.IOException;
 
 @Service
 public class Cs3 {
-
     @KafkaListener(topics = "Topic3", groupId = "group3")
     public void consume(String message) throws IOException {
-
         System.out.println("Message final : " + message);
-
     }
-
-
 }

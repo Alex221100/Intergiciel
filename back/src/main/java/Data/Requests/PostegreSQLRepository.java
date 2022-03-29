@@ -14,10 +14,11 @@ import java.util.List;
 public class PostegreSQLRepository {
 
     public static void insertGlobal(GlobalDAO globalDao) {
-        String sql = "INSERT INTO Global(newconfirmed, totalconfirmed, newdeaths, totaldeaths, newrecovered, totalrecovered, dateMaj) " +
-                String.format("VALUES (%d, %d, %d, %d, %d, %d, '" + globalDao.getDate()
-                                + "')"                        , globalDao.getNewConfirmed(), globalDao.getTotalConfirmed(),
-                        globalDao.getNewDeaths(), globalDao.getTotalDeaths(), globalDao.getNewRecovered(), globalDao.getTotalRecovered());
+        String sql = "DELETE FROM Global;" +
+                "INSERT INTO Global(newconfirmed, totalconfirmed, newdeaths, totaldeaths, newrecovered, totalrecovered, dateMaj) " +
+                "VALUES (" + globalDao.getNewConfirmed() + ", " + globalDao.getTotalConfirmed() + ", " +
+                globalDao.getNewDeaths() + ", " + globalDao.getTotalDeaths() + ", " + globalDao.getNewRecovered() +
+                ", " + globalDao.getTotalRecovered() + ", '" + globalDao.getDate()+ "')";
 
         try {
             Connection connection = PostgreSQLJDBC.getConnection();
@@ -34,26 +35,24 @@ public class PostegreSQLRepository {
     }
 
     public static void insertCountries(List<CountryDAO> countriesDAO) throws SQLException {
-        System.out.println("je suis dans insertCountry");
-
         try {
             Connection connection = PostgreSQLJDBC.getConnection();
             Statement statement = connection.createStatement();
             for (CountryDAO countryDAO : countriesDAO) {
                 String sql = "INSERT INTO Country(country, countrycode, slug, newconfirmed, totalconfirmed, newdeaths, " +
                         "totaldeaths, newrecovered, totalrecovered, dateMaj) " +
-                        String.format("VALUES ('%s', '%s', '%s', %d, %d, %d, %d, %d, %d, '" + countryDAO.getDate() +
-                                        "') ON CONFLICT (country) DO UPDATE " +
-                                        "SET newconfirmed = EXCLUDED.newconfirmed," +
-                                        "totalconfirmed = EXCLUDED.totalconfirmed," +
-                                        "newdeaths = EXCLUDED.newdeaths," +
-                                        "totaldeaths = EXCLUDED.totaldeaths," +
-                                        "newrecovered = EXCLUDED.newrecovered," +
-                                        "totalrecovered = EXCLUDED.totalrecovered," +
-                                        "dateMaj = EXCLUDED.dateMaj;", countryDAO.getCountry().replace("'", "''"),
-                                countryDAO.getCountryCode(), countryDAO.getSlug(), countryDAO.getNewConfirmed(),
-                                countryDAO.getTotalConfirmed(), countryDAO.getNewDeaths(), countryDAO.getTotalDeaths(),
-                                countryDAO.getNewRecovered(), countryDAO.getTotalRecovered());
+                        "VALUES ('" + countryDAO.getCountry().replace("'", "''") + "','" +
+                        countryDAO.getCountryCode() +  "', '" + countryDAO.getSlug() + "', " + countryDAO.getNewConfirmed() +
+                        ", " + countryDAO.getTotalConfirmed() + ", " + countryDAO.getNewDeaths() + ", " +
+                        countryDAO.getTotalDeaths() + ", " + countryDAO.getNewRecovered() + ", " + countryDAO.getTotalRecovered()
+                        + ", '" + countryDAO.getDate() + "') ON CONFLICT (country) DO UPDATE " +
+                        "SET newconfirmed = EXCLUDED.newconfirmed," +
+                        "totalconfirmed = EXCLUDED.totalconfirmed," +
+                        "newdeaths = EXCLUDED.newdeaths," +
+                        "totaldeaths = EXCLUDED.totaldeaths," +
+                        "newrecovered = EXCLUDED.newrecovered," +
+                        "totalrecovered = EXCLUDED.totalrecovered," +
+                        "dateMaj = EXCLUDED.dateMaj;";
 
                 statement.executeUpdate(sql);
             }
