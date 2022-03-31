@@ -14,7 +14,9 @@
                   <code>localhost:8080/global</code><br/>
                   <v-btn elevation="2" @click="getGlobalValues">Lancer</v-btn>
                 </v-col>
-                <v-col class=terminal>{{globalValues}}</v-col>
+                <v-col class=terminal>
+                  <p v-html="globalValues"></p>
+                </v-col>
               </v-row>
             </div>
           </v-card-text>
@@ -31,10 +33,24 @@
             <div>
               <v-row>
                 <v-col>
-                  <code>localhost:8080/country</code><br/>
+                  <code>localhost:8080/country?countryName={{countryName}}</code><br/>
+                  <v-col
+                    class="d-flex"
+                    cols="12"
+                    sm="6"
+                  >
+                    <v-select
+                      :items="countriesName"
+                      v-model="countryName"
+                      label="Country"
+                      outlined
+                    ></v-select>
+                  </v-col>
                   <v-btn elevation="2" @click="getCountryValues">Lancer</v-btn>
                 </v-col>
-                <v-col class=terminal>{{countryValues}}</v-col>
+                <v-col class=terminal>
+                  <p v-html="countryValues"></p>
+                </v-col>
               </v-row>
             </div>
           </v-card-text>
@@ -94,7 +110,9 @@
                   <code>localhost:8080/countriesDeathsPercent</code><br/>
                   <v-btn elevation="2" @click="getCountriesDeathsPercent">Lancer</v-btn>
                 </v-col>
-                <v-col class=terminal>{{countriesDeathsPercent}}</v-col>
+                <v-col class=terminal>
+                  <p v-html="countriesDeathsPercent"></p>
+                </v-col>
               </v-row>
             </div>
           </v-card-text>
@@ -113,14 +131,40 @@ export default {
       confirmedAvg: null,
       deathsAvg: null,
       countriesDeathsPercent: null,
-      export: null
+      export: null,
+      countriesName: ['Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antarctica', 'Antigua and Barbuda', 
+      'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 
+      'Belarus', 'Belgium', 'Belize', 'Benin', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 
+      'Brunei Darussalam', 'Bulgaria', 'Burkina Faso', 'Burundi', 'Cambodia', 'Cameroon', 'Canada', 'Cape Verde', 
+      'Central African Republic', 'Chad', 'Chile', 'China', 'Colombia', 'Comoros', 'Congo (Brazzaville)', 
+      'Congo (Kinshasa)', 'Costa Rica', 'Croatia', 'Cuba', 'Cyprus', 'Czech Republic', 'Côte d Ivoire', 
+      'Denmark', 'Djibouti', 'Dominica', 'Dominican Republic', 'Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea', 
+      'Eritrea', 'Estonia', 'Ethiopia', 'Fiji', 'Finland', 'France', 'Gabon', 'Gambia', 'Georgia', 'Germany', 'Ghana', 
+      'Greece', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana', 'Haiti', 'Holy See (Vatican City State)', 
+      'Honduras', 'Hungary', 'Iceland', 'India', 'Indonesia', 'Iran, Islamic Republic of', 'Iraq', 'Ireland', 'Israel', 
+      'Italy', 'Jamaica', 'Japan', 'Jordan', 'Kazakhstan', 'Kenya', 'Kiribati', 'Korea (South)', 'Kuwait', 'Kyrgyzstan', 
+      'Lao PDR', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania', 'Luxembourg', 
+      'Macedonia, Republic of', 'Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 
+      'Mauritania', 'Mauritius', 'Mexico', 'Micronesia, Federated States of', 'Moldova', 'Monaco', 'Mongolia', 
+      'Montenegro', 'Morocco', 'Mozambique', 'Myanmar', 'Namibia', 'Nepal', 'Netherlands', 'New Zealand', 'Nicaragua', 
+      'Niger', 'Nigeria', 'Norway', 'Oman', 'Pakistan', 'Palau', 'Palestinian Territory', 'Panama', 'Papua New Guinea', 
+      'Paraguay', 'Peru', 'Philippines', 'Poland', 'Portugal', 'Qatar', 'Republic of Kosovo', 'Romania', 
+      'Russian Federation', 'Rwanda', 'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and Grenadines', 
+      'Samoa', 'San Marino', 'Sao Tome and Principe', 'Saudi Arabia', 'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 
+      'Singapore', 'Slovakia', 'Slovenia', 'Solomon Islands', 'Somalia', 'South Africa', 'South Sudan', 'Spain', 
+      'Sri Lanka', 'Sudan', 'Suriname', 'Swaziland', 'Sweden', 'Switzerland', 'Syrian Arab Republic (Syria)', 
+      'Taiwan, Republic of China', 'Tajikistan', 'Tanzania, United Republic of', 'Thailand', 'Timor-Leste', 'Togo', 
+      'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 'Uganda', 'Ukraine', 'United Arab Emirates', 'United Kingdom',
+       'United States of America', 'Uruguay', 'Uzbekistan', 'Vanuatu', 'Venezuela (Bolivarian Republic)', 'Viet Nam', 
+       'Yemen', 'Zambia', 'Zimbabwe'],
+       countryName: "Afghanistan",
     }
   },
   methods:{
     async getGlobalValues(){
       try{
         const response = await covidService.getGlobalValues();
-        this.globalValues = response.data;
+        this.globalValues = this.formatJson(response.data);
       } catch (error) {
         console.log(error);
       }
@@ -128,8 +172,8 @@ export default {
 
     async getCountryValues(){
       try{
-      const response = await covidService.getCountryValues();
-      this.countryValues = response.data;
+      const response = await covidService.getCountryValues(this.countryName);
+      this.countryValues = this.formatJson(response.data);
       } catch (error) {
         console.log(error);
       }
@@ -156,7 +200,7 @@ export default {
     async getCountriesDeathsPercent(){
       try{
         const response = await covidService.getCountriesDeathsPercent();
-        this.countriesDeathsPercent = response.data;
+        this.countriesDeathsPercent = this.formatJson(response.data);
       } catch (error) {
         console.log(error);
       }
@@ -169,8 +213,15 @@ export default {
       } catch (error) {
         console.log(error);
       }
+    },
+
+    formatJson(json){
+      var formattedString = json.split(",").join("<br />")
+      return(formattedString)
     }
-  }
+
+   
+  },
 }
 </script>
 <style scoped>

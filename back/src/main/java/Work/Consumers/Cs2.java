@@ -9,6 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
+import java.beans.XMLEncoder;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.*;
 
@@ -77,8 +80,20 @@ public class Cs2 {
         return result;
     }
 
-    private static Object getExport() {
-        return null;
+    private static int getExport() throws FileNotFoundException {
+
+        /*List<CountryDAO> countries = PostegreSQLRepository.getCountries();
+        XMLEncoder encoder = new XMLEncoder(new FileOutputStream("test"));
+        try {
+            for (CountryDAO country : countries) {
+                encoder.writeObject(country);
+                encoder.flush();
+            }
+        } finally {
+            // fermeture de l'encodeur
+            encoder.close();
+        }*/
+        return 0;
     }
 
 }

@@ -15,8 +15,8 @@ export default class covidService {
     /**
     * Gets country values.
     */
-     static async getCountryValues() {
-        return await covidApi.getCountryValues();
+     static async getCountryValues(countryName) {
+        return await covidApi.getCountryValues(countryName);
     }
 
     /**

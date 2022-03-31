@@ -93,7 +93,7 @@ public class PostegreSQLRepository {
         try {
             Connection connection = PostgreSQLJDBC.getConnection();
             Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM Country;");
+            ResultSet rs = stmt.executeQuery("SELECT * FROM Country ORDER BY Country ASC;");
             while (rs.next()) {
                 result.add(new CountryDAO(
                         rs.getString("Country"),

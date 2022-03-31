@@ -11,6 +11,7 @@ services:
 
   kafka:
     image: docker.io/bitnami/kafka:3
+    hostname: localhost
     restart: always
     ports:
       - "9092:9092"
@@ -18,9 +19,9 @@ services:
     volumes:
       - "kafka_data:/bitnami"
     environment:
-      KAFKA_CFG_ZOOKEEPER_CONNECT: zookeeper:2181
-      ALLOW_PLAINTEXT_LISTENER: yes
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
+      - ALLOW_PLAINTEXT_LISTENER=yes
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://192.168.1.48:9092
     depends_on:
       - zookeeper
 
@@ -54,5 +55,3 @@ volumes:
     driver: local
   postgre_data:
     driver: local
-
-  

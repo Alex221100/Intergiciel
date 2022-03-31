@@ -17,8 +17,8 @@ export default class covidApi {
     /**
      * Gets country values.
      */
-     static async getCountryValues() {
-        return axios.get(`${baseUrl}/country`, defaultConfig);
+     static async getCountryValues(countryName) {
+        return axios.get(`${baseUrl}/country?countryName=${countryName}`, defaultConfig);
     }
 
     /**

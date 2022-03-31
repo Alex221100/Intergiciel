@@ -16,6 +16,7 @@ import java.util.concurrent.ExecutionException;
 public class Pr1 {
 
     private static KafkaProducer<Long, String> producer = null;
+    private static Pr1 instance = null;
 
     private Pr1() {
         producer = new KafkaProducer<>(new HashMap<>() {{
@@ -24,6 +25,14 @@ public class Pr1 {
             put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, LongSerializer.class.getName());
             put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         }});
+    }
+
+    public static Pr1 getInstance() {
+        if (instance == null) {
+            instance = new Pr1();
+        }
+
+        return instance;
     }
 
     public void sendCovidSummary() {
