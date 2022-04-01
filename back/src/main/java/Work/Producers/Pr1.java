@@ -16,7 +16,6 @@ import java.util.concurrent.ExecutionException;
 public class Pr1 {
 
     private static KafkaProducer<Long, String> producer = null;
-    private static Pr1 instance = null;
 
     private Pr1() {
         producer = new KafkaProducer<>(new HashMap<>() {{
@@ -27,16 +26,7 @@ public class Pr1 {
         }});
     }
 
-    public static Pr1 getInstance() {
-        if (instance == null) {
-            instance = new Pr1();
-        }
-
-        return instance;
-    }
-
     public void sendCovidSummary() {
-        System.out.println("je suis dans Pr1");
         CovidProvider.getSummaryToJson().subscribe(summary -> {
             final ProducerRecord<Long, String> record = new ProducerRecord<Long, String>("Topic1", summary);
             try {

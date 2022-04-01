@@ -15,7 +15,6 @@ import java.util.concurrent.ExecutionException;
 public class Pr3 {
 
     private static KafkaProducer<Long, String> producer = null;
-    private static Pr3 instance = null;
 
     private Pr3() {
         producer = new KafkaProducer<>(new HashMap<>() {{
@@ -26,16 +25,7 @@ public class Pr3 {
         }});
     }
 
-    public static Pr3 getInstance() {
-        if (instance == null) {
-            instance = new Pr3();
-        }
-
-        return instance;
-    }
-
     public void displayResult(Object resultObject) {
-        System.out.println("Pr3 envoie : " + resultObject.toString());
         final ProducerRecord<Long, String> record = new ProducerRecord<Long, String>("Topic3", resultObject.toString());
         try {
             producer.send(record).get();
