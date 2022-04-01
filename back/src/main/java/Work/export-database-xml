@@ -1,0 +1,4857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="17.0.1" class="java.beans.XMLDecoder">
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Afghanistan</string>
+  </void>
+  <void property="countryCode">
+   <string>AF</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>31</int>
+  </void>
+  <void property="newDeaths">
+   <int>3</int>
+  </void>
+  <void property="slug">
+   <string>afghanistan</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>177747</int>
+  </void>
+  <void property="totalDeaths">
+   <int>7670</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Albania</string>
+  </void>
+  <void property="countryCode">
+   <string>AL</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>69</int>
+  </void>
+  <void property="slug">
+   <string>albania</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>273677</int>
+  </void>
+  <void property="totalDeaths">
+   <int>3492</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Algeria</string>
+  </void>
+  <void property="countryCode">
+   <string>DZ</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>9</int>
+  </void>
+  <void property="slug">
+   <string>algeria</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>265671</int>
+  </void>
+  <void property="totalDeaths">
+   <int>6874</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Andorra</string>
+  </void>
+  <void property="countryCode">
+   <string>AD</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>andorra</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>40024</int>
+  </void>
+  <void property="totalDeaths">
+   <int>153</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Angola</string>
+  </void>
+  <void property="countryCode">
+   <string>AO</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>31</int>
+  </void>
+  <void property="slug">
+   <string>angola</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>99169</int>
+  </void>
+  <void property="totalDeaths">
+   <int>1900</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Antarctica</string>
+  </void>
+  <void property="countryCode">
+   <string>AQ</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>antarctica</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>11</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Antigua and Barbuda</string>
+  </void>
+  <void property="countryCode">
+   <string>AG</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>antigua-and-barbuda</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>7491</int>
+  </void>
+  <void property="totalDeaths">
+   <int>135</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Argentina</string>
+  </void>
+  <void property="countryCode">
+   <string>AR</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>2784</int>
+  </void>
+  <void property="newDeaths">
+   <int>22</int>
+  </void>
+  <void property="slug">
+   <string>argentina</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>9037911</int>
+  </void>
+  <void property="totalDeaths">
+   <int>128019</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Armenia</string>
+  </void>
+  <void property="countryCode">
+   <string>AM</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>21</int>
+  </void>
+  <void property="newDeaths">
+   <int>2</int>
+  </void>
+  <void property="slug">
+   <string>armenia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>422519</int>
+  </void>
+  <void property="totalDeaths">
+   <int>8613</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Australia</string>
+  </void>
+  <void property="countryCode">
+   <string>AU</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>60239</int>
+  </void>
+  <void property="newDeaths">
+   <int>34</int>
+  </void>
+  <void property="slug">
+   <string>australia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>4507681</int>
+  </void>
+  <void property="totalDeaths">
+   <int>5993</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Austria</string>
+  </void>
+  <void property="countryCode">
+   <string>AT</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>25893</int>
+  </void>
+  <void property="newDeaths">
+   <int>53</int>
+  </void>
+  <void property="slug">
+   <string>austria</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>3831048</int>
+  </void>
+  <void property="totalDeaths">
+   <int>15865</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Azerbaijan</string>
+  </void>
+  <void property="countryCode">
+   <string>AZ</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>56</int>
+  </void>
+  <void property="newDeaths">
+   <int>1</int>
+  </void>
+  <void property="slug">
+   <string>azerbaijan</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>791932</int>
+  </void>
+  <void property="totalDeaths">
+   <int>9692</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Bahamas</string>
+  </void>
+  <void property="countryCode">
+   <string>BS</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>25</int>
+  </void>
+  <void property="slug">
+   <string>bahamas</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>33283</int>
+  </void>
+  <void property="totalDeaths">
+   <int>788</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Bahrain</string>
+  </void>
+  <void property="countryCode">
+   <string>BH</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>719</int>
+  </void>
+  <void property="newDeaths">
+   <int>1</int>
+  </void>
+  <void property="slug">
+   <string>bahrain</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>554469</int>
+  </void>
+  <void property="totalDeaths">
+   <int>1471</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Bangladesh</string>
+  </void>
+  <void property="countryCode">
+   <string>BD</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>73</int>
+  </void>
+  <void property="slug">
+   <string>bangladesh</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1951577</int>
+  </void>
+  <void property="totalDeaths">
+   <int>29122</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Barbados</string>
+  </void>
+  <void property="countryCode">
+   <string>BB</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>192</int>
+  </void>
+  <void property="newDeaths">
+   <int>43</int>
+  </void>
+  <void property="slug">
+   <string>barbados</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>59272</int>
+  </void>
+  <void property="totalDeaths">
+   <int>374</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Belarus</string>
+  </void>
+  <void property="countryCode">
+   <string>BY</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>1318</int>
+  </void>
+  <void property="newDeaths">
+   <int>9</int>
+  </void>
+  <void property="slug">
+   <string>belarus</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>962707</int>
+  </void>
+  <void property="totalDeaths">
+   <int>6819</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Belgium</string>
+  </void>
+  <void property="countryCode">
+   <string>BE</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>belgium</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>3807447</int>
+  </void>
+  <void property="totalDeaths">
+   <int>30747</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Belize</string>
+  </void>
+  <void property="countryCode">
+   <string>BZ</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>3</int>
+  </void>
+  <void property="slug">
+   <string>belize</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>57280</int>
+  </void>
+  <void property="totalDeaths">
+   <int>654</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Benin</string>
+  </void>
+  <void property="countryCode">
+   <string>BJ</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>benin</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>26952</int>
+  </void>
+  <void property="totalDeaths">
+   <int>163</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Bhutan</string>
+  </void>
+  <void property="countryCode">
+   <string>BT</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>1138</int>
+  </void>
+  <void property="slug">
+   <string>bhutan</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>28101</int>
+  </void>
+  <void property="totalDeaths">
+   <int>10</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Bolivia</string>
+  </void>
+  <void property="countryCode">
+   <string>BO</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>bolivia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>901943</int>
+  </void>
+  <void property="totalDeaths">
+   <int>21894</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Bosnia and Herzegovina</string>
+  </void>
+  <void property="countryCode">
+   <string>BA</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>108</int>
+  </void>
+  <void property="newDeaths">
+   <int>3</int>
+  </void>
+  <void property="slug">
+   <string>bosnia-and-herzegovina</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>375440</int>
+  </void>
+  <void property="totalDeaths">
+   <int>15713</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Botswana</string>
+  </void>
+  <void property="countryCode">
+   <string>BW</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>botswana</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>305526</int>
+  </void>
+  <void property="totalDeaths">
+   <int>2686</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Brazil</string>
+  </void>
+  <void property="countryCode">
+   <string>BR</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>33413</int>
+  </void>
+  <void property="newDeaths">
+   <int>261</int>
+  </void>
+  <void property="slug">
+   <string>brazil</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>29920604</int>
+  </void>
+  <void property="totalDeaths">
+   <int>659769</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Brunei Darussalam</string>
+  </void>
+  <void property="countryCode">
+   <string>BN</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>686</int>
+  </void>
+  <void property="slug">
+   <string>brunei</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>134412</int>
+  </void>
+  <void property="totalDeaths">
+   <int>208</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Bulgaria</string>
+  </void>
+  <void property="countryCode">
+   <string>BG</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>1143</int>
+  </void>
+  <void property="newDeaths">
+   <int>17</int>
+  </void>
+  <void property="slug">
+   <string>bulgaria</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1138923</int>
+  </void>
+  <void property="totalDeaths">
+   <int>36529</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Burkina Faso</string>
+  </void>
+  <void property="countryCode">
+   <string>BF</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>burkina-faso</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>20853</int>
+  </void>
+  <void property="totalDeaths">
+   <int>382</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Burundi</string>
+  </void>
+  <void property="countryCode">
+   <string>BI</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>19</int>
+  </void>
+  <void property="slug">
+   <string>burundi</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>38509</int>
+  </void>
+  <void property="totalDeaths">
+   <int>38</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Cambodia</string>
+  </void>
+  <void property="countryCode">
+   <string>KH</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>40</int>
+  </void>
+  <void property="slug">
+   <string>cambodia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>135625</int>
+  </void>
+  <void property="totalDeaths">
+   <int>3054</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Cameroon</string>
+  </void>
+  <void property="countryCode">
+   <string>CM</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>cameroon</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>119544</int>
+  </void>
+  <void property="totalDeaths">
+   <int>1927</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Canada</string>
+  </void>
+  <void property="countryCode">
+   <string>CA</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>6409</int>
+  </void>
+  <void property="newDeaths">
+   <int>29</int>
+  </void>
+  <void property="slug">
+   <string>canada</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>2940360</int>
+  </void>
+  <void property="totalDeaths">
+   <int>33526</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Cape Verde</string>
+  </void>
+  <void property="countryCode">
+   <string>CV</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>2</int>
+  </void>
+  <void property="slug">
+   <string>cape-verde</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>55952</int>
+  </void>
+  <void property="totalDeaths">
+   <int>401</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Central African Republic</string>
+  </void>
+  <void property="countryCode">
+   <string>CF</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>central-african-republic</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>14649</int>
+  </void>
+  <void property="totalDeaths">
+   <int>113</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Chad</string>
+  </void>
+  <void property="countryCode">
+   <string>TD</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>chad</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>7310</int>
+  </void>
+  <void property="totalDeaths">
+   <int>191</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Chile</string>
+  </void>
+  <void property="countryCode">
+   <string>CL</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>5926</int>
+  </void>
+  <void property="newDeaths">
+   <int>3</int>
+  </void>
+  <void property="slug">
+   <string>chile</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>3464425</int>
+  </void>
+  <void property="totalDeaths">
+   <int>56467</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>China</string>
+  </void>
+  <void property="countryCode">
+   <string>CN</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>8820</int>
+  </void>
+  <void property="newDeaths">
+   <int>135</int>
+  </void>
+  <void property="slug">
+   <string>china</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1300127</int>
+  </void>
+  <void property="totalDeaths">
+   <int>12344</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Colombia</string>
+  </void>
+  <void property="countryCode">
+   <string>CO</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>311</int>
+  </void>
+  <void property="slug">
+   <string>colombia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>6084551</int>
+  </void>
+  <void property="totalDeaths">
+   <int>139595</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Comoros</string>
+  </void>
+  <void property="countryCode">
+   <string>KM</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>comoros</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>8086</int>
+  </void>
+  <void property="totalDeaths">
+   <int>160</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Congo (Brazzaville)</string>
+  </void>
+  <void property="countryCode">
+   <string>CG</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>2</int>
+  </void>
+  <void property="newDeaths">
+   <int>1</int>
+  </void>
+  <void property="slug">
+   <string>congo-brazzaville</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>24071</int>
+  </void>
+  <void property="totalDeaths">
+   <int>385</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Congo (Kinshasa)</string>
+  </void>
+  <void property="countryCode">
+   <string>CD</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>congo-kinshasa</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>86748</int>
+  </void>
+  <void property="totalDeaths">
+   <int>1337</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Costa Rica</string>
+  </void>
+  <void property="countryCode">
+   <string>CR</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>709</int>
+  </void>
+  <void property="newDeaths">
+   <int>2</int>
+  </void>
+  <void property="slug">
+   <string>costa-rica</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>838537</int>
+  </void>
+  <void property="totalDeaths">
+   <int>8300</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Croatia</string>
+  </void>
+  <void property="countryCode">
+   <string>HR</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>croatia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1097409</int>
+  </void>
+  <void property="totalDeaths">
+   <int>15563</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Cuba</string>
+  </void>
+  <void property="countryCode">
+   <string>CU</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>833</int>
+  </void>
+  <void property="slug">
+   <string>cuba</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1090285</int>
+  </void>
+  <void property="totalDeaths">
+   <int>8510</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Cyprus</string>
+  </void>
+  <void property="countryCode">
+   <string>CY</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>4349</int>
+  </void>
+  <void property="newDeaths">
+   <int>2</int>
+  </void>
+  <void property="slug">
+   <string>cyprus</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>430726</int>
+  </void>
+  <void property="totalDeaths">
+   <int>940</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Czech Republic</string>
+  </void>
+  <void property="countryCode">
+   <string>CZ</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>czech-republic</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>3815526</int>
+  </void>
+  <void property="totalDeaths">
+   <int>39673</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Côte d&apos;Ivoire</string>
+  </void>
+  <void property="countryCode">
+   <string>CI</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>19</int>
+  </void>
+  <void property="slug">
+   <string>cote-divoire</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>81741</int>
+  </void>
+  <void property="totalDeaths">
+   <int>796</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Denmark</string>
+  </void>
+  <void property="countryCode">
+   <string>DK</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>denmark</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>3101471</int>
+  </void>
+  <void property="totalDeaths">
+   <int>5717</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Djibouti</string>
+  </void>
+  <void property="countryCode">
+   <string>DJ</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>2</int>
+  </void>
+  <void property="slug">
+   <string>djibouti</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>15587</int>
+  </void>
+  <void property="totalDeaths">
+   <int>189</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Dominica</string>
+  </void>
+  <void property="countryCode">
+   <string>DM</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>20</int>
+  </void>
+  <void property="slug">
+   <string>dominica</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>11859</int>
+  </void>
+  <void property="totalDeaths">
+   <int>63</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Dominican Republic</string>
+  </void>
+  <void property="countryCode">
+   <string>DO</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>dominican-republic</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>578020</int>
+  </void>
+  <void property="totalDeaths">
+   <int>4375</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Ecuador</string>
+  </void>
+  <void property="countryCode">
+   <string>EC</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>ecuador</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>859890</int>
+  </void>
+  <void property="totalDeaths">
+   <int>35421</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Egypt</string>
+  </void>
+  <void property="countryCode">
+   <string>EG</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>egypt</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>505264</int>
+  </void>
+  <void property="totalDeaths">
+   <int>24417</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>El Salvador</string>
+  </void>
+  <void property="countryCode">
+   <string>SV</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newDeaths">
+   <int>1</int>
+  </void>
+  <void property="slug">
+   <string>el-salvador</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>161052</int>
+  </void>
+  <void property="totalDeaths">
+   <int>4119</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Equatorial Guinea</string>
+  </void>
+  <void property="countryCode">
+   <string>GQ</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>equatorial-guinea</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>16000</int>
+  </void>
+  <void property="totalDeaths">
+   <int>183</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Eritrea</string>
+  </void>
+  <void property="countryCode">
+   <string>ER</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>1</int>
+  </void>
+  <void property="slug">
+   <string>eritrea</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>9728</int>
+  </void>
+  <void property="totalDeaths">
+   <int>103</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Estonia</string>
+  </void>
+  <void property="countryCode">
+   <string>EE</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>1164</int>
+  </void>
+  <void property="newDeaths">
+   <int>8</int>
+  </void>
+  <void property="slug">
+   <string>estonia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>556304</int>
+  </void>
+  <void property="totalDeaths">
+   <int>2459</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Ethiopia</string>
+  </void>
+  <void property="countryCode">
+   <string>ET</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>54</int>
+  </void>
+  <void property="newDeaths">
+   <int>5</int>
+  </void>
+  <void property="slug">
+   <string>ethiopia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>469758</int>
+  </void>
+  <void property="totalDeaths">
+   <int>7497</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Fiji</string>
+  </void>
+  <void property="countryCode">
+   <string>FJ</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>fiji</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>64404</int>
+  </void>
+  <void property="totalDeaths">
+   <int>834</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Finland</string>
+  </void>
+  <void property="countryCode">
+   <string>FI</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>9541</int>
+  </void>
+  <void property="newDeaths">
+   <int>39</int>
+  </void>
+  <void property="slug">
+   <string>finland</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>883676</int>
+  </void>
+  <void property="totalDeaths">
+   <int>3144</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>France</string>
+  </void>
+  <void property="countryCode">
+   <string>FR</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>france</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>25633476</int>
+  </void>
+  <void property="totalDeaths">
+   <int>143168</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Gabon</string>
+  </void>
+  <void property="countryCode">
+   <string>GA</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>gabon</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>47584</int>
+  </void>
+  <void property="totalDeaths">
+   <int>303</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Gambia</string>
+  </void>
+  <void property="countryCode">
+   <string>GM</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>gambia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>11988</int>
+  </void>
+  <void property="totalDeaths">
+   <int>365</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Georgia</string>
+  </void>
+  <void property="countryCode">
+   <string>GE</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>468</int>
+  </void>
+  <void property="newDeaths">
+   <int>6</int>
+  </void>
+  <void property="slug">
+   <string>georgia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1648264</int>
+  </void>
+  <void property="totalDeaths">
+   <int>16745</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Germany</string>
+  </void>
+  <void property="countryCode">
+   <string>DE</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>268477</int>
+  </void>
+  <void property="newDeaths">
+   <int>348</int>
+  </void>
+  <void property="slug">
+   <string>germany</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>20829608</int>
+  </void>
+  <void property="totalDeaths">
+   <int>129112</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Ghana</string>
+  </void>
+  <void property="countryCode">
+   <string>GH</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>ghana</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>160925</int>
+  </void>
+  <void property="totalDeaths">
+   <int>1445</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Greece</string>
+  </void>
+  <void property="countryCode">
+   <string>GR</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>21096</int>
+  </void>
+  <void property="newDeaths">
+   <int>56</int>
+  </void>
+  <void property="slug">
+   <string>greece</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>3030429</int>
+  </void>
+  <void property="totalDeaths">
+   <int>27510</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Grenada</string>
+  </void>
+  <void property="countryCode">
+   <string>GD</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>14</int>
+  </void>
+  <void property="slug">
+   <string>grenada</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>14012</int>
+  </void>
+  <void property="totalDeaths">
+   <int>218</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Guatemala</string>
+  </void>
+  <void property="countryCode">
+   <string>GT</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>guatemala</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>827596</int>
+  </void>
+  <void property="totalDeaths">
+   <int>17300</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Guinea</string>
+  </void>
+  <void property="countryCode">
+   <string>GN</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>guinea</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>36459</int>
+  </void>
+  <void property="totalDeaths">
+   <int>440</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Guinea-Bissau</string>
+  </void>
+  <void property="countryCode">
+   <string>GW</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>guinea-bissau</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>8149</int>
+  </void>
+  <void property="totalDeaths">
+   <int>170</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Guyana</string>
+  </void>
+  <void property="countryCode">
+   <string>GY</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>7</int>
+  </void>
+  <void property="slug">
+   <string>guyana</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>63253</int>
+  </void>
+  <void property="totalDeaths">
+   <int>1226</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Haiti</string>
+  </void>
+  <void property="countryCode">
+   <string>HT</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>haiti</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>30545</int>
+  </void>
+  <void property="totalDeaths">
+   <int>833</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Holy See (Vatican City State)</string>
+  </void>
+  <void property="countryCode">
+   <string>VA</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>holy-see-vatican-city-state</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>29</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Honduras</string>
+  </void>
+  <void property="countryCode">
+   <string>HN</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>49</int>
+  </void>
+  <void property="slug">
+   <string>honduras</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>421062</int>
+  </void>
+  <void property="totalDeaths">
+   <int>10880</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Hungary</string>
+  </void>
+  <void property="countryCode">
+   <string>HU</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>2654</int>
+  </void>
+  <void property="newDeaths">
+   <int>40</int>
+  </void>
+  <void property="slug">
+   <string>hungary</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1851871</int>
+  </void>
+  <void property="totalDeaths">
+   <int>45470</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Iceland</string>
+  </void>
+  <void property="countryCode">
+   <string>IS</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>441</int>
+  </void>
+  <void property="newDeaths">
+   <int>3</int>
+  </void>
+  <void property="slug">
+   <string>iceland</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>181391</int>
+  </void>
+  <void property="totalDeaths">
+   <int>101</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>India</string>
+  </void>
+  <void property="countryCode">
+   <string>IN</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>1225</int>
+  </void>
+  <void property="newDeaths">
+   <int>28</int>
+  </void>
+  <void property="slug">
+   <string>india</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>43024440</int>
+  </void>
+  <void property="totalDeaths">
+   <int>521129</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Indonesia</string>
+  </void>
+  <void property="countryCode">
+   <string>ID</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>3332</int>
+  </void>
+  <void property="newDeaths">
+   <int>89</int>
+  </void>
+  <void property="slug">
+   <string>indonesia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>6012818</int>
+  </void>
+  <void property="totalDeaths">
+   <int>155089</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Iran, Islamic Republic of</string>
+  </void>
+  <void property="countryCode">
+   <string>IR</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>2487</int>
+  </void>
+  <void property="newDeaths">
+   <int>46</int>
+  </void>
+  <void property="slug">
+   <string>iran</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>7162220</int>
+  </void>
+  <void property="totalDeaths">
+   <int>140204</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Iraq</string>
+  </void>
+  <void property="countryCode">
+   <string>IQ</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>341</int>
+  </void>
+  <void property="newDeaths">
+   <int>1</int>
+  </void>
+  <void property="slug">
+   <string>iraq</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>2319550</int>
+  </void>
+  <void property="totalDeaths">
+   <int>25164</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Ireland</string>
+  </void>
+  <void property="countryCode">
+   <string>IE</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>5243</int>
+  </void>
+  <void property="newDeaths">
+   <int>13</int>
+  </void>
+  <void property="slug">
+   <string>ireland</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1459425</int>
+  </void>
+  <void property="totalDeaths">
+   <int>6753</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Israel</string>
+  </void>
+  <void property="countryCode">
+   <string>IL</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>13927</int>
+  </void>
+  <void property="slug">
+   <string>israel</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>3918225</int>
+  </void>
+  <void property="totalDeaths">
+   <int>10485</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Italy</string>
+  </void>
+  <void property="countryCode">
+   <string>IT</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>71411</int>
+  </void>
+  <void property="newDeaths">
+   <int>170</int>
+  </void>
+  <void property="slug">
+   <string>italy</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>14567990</int>
+  </void>
+  <void property="totalDeaths">
+   <int>159224</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Jamaica</string>
+  </void>
+  <void property="countryCode">
+   <string>JM</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>jamaica</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>128735</int>
+  </void>
+  <void property="totalDeaths">
+   <int>2884</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Japan</string>
+  </void>
+  <void property="countryCode">
+   <string>JP</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>53609</int>
+  </void>
+  <void property="newDeaths">
+   <int>96</int>
+  </void>
+  <void property="slug">
+   <string>japan</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>6504032</int>
+  </void>
+  <void property="totalDeaths">
+   <int>28018</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Jordan</string>
+  </void>
+  <void property="countryCode">
+   <string>JO</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>jordan</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1692485</int>
+  </void>
+  <void property="totalDeaths">
+   <int>14031</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Kazakhstan</string>
+  </void>
+  <void property="countryCode">
+   <string>KZ</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>kazakhstan</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1393786</int>
+  </void>
+  <void property="totalDeaths">
+   <int>19011</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Kenya</string>
+  </void>
+  <void property="countryCode">
+   <string>KE</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>21</int>
+  </void>
+  <void property="slug">
+   <string>kenya</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>323423</int>
+  </void>
+  <void property="totalDeaths">
+   <int>5648</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Kiribati</string>
+  </void>
+  <void property="countryCode">
+   <string>KI</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>1</int>
+  </void>
+  <void property="slug">
+   <string>kiribati</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>3066</int>
+  </void>
+  <void property="totalDeaths">
+   <int>13</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Korea (South)</string>
+  </void>
+  <void property="countryCode">
+   <string>KR</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>280187</int>
+  </void>
+  <void property="newDeaths">
+   <int>360</int>
+  </void>
+  <void property="slug">
+   <string>korea-south</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>13375818</int>
+  </void>
+  <void property="totalDeaths">
+   <int>16590</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Kuwait</string>
+  </void>
+  <void property="countryCode">
+   <string>KW</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>kuwait</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>628978</int>
+  </void>
+  <void property="totalDeaths">
+   <int>2554</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Kyrgyzstan</string>
+  </void>
+  <void property="countryCode">
+   <string>KG</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>12</int>
+  </void>
+  <void property="slug">
+   <string>kyrgyzstan</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>200935</int>
+  </void>
+  <void property="totalDeaths">
+   <int>2988</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Lao PDR</string>
+  </void>
+  <void property="countryCode">
+   <string>LA</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>2762</int>
+  </void>
+  <void property="newDeaths">
+   <int>1</int>
+  </void>
+  <void property="slug">
+   <string>lao-pdr</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>176898</int>
+  </void>
+  <void property="totalDeaths">
+   <int>665</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Latvia</string>
+  </void>
+  <void property="countryCode">
+   <string>LV</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>2005</int>
+  </void>
+  <void property="newDeaths">
+   <int>8</int>
+  </void>
+  <void property="slug">
+   <string>latvia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>798895</int>
+  </void>
+  <void property="totalDeaths">
+   <int>5616</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Lebanon</string>
+  </void>
+  <void property="countryCode">
+   <string>LB</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>380</int>
+  </void>
+  <void property="newDeaths">
+   <int>6</int>
+  </void>
+  <void property="slug">
+   <string>lebanon</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1092157</int>
+  </void>
+  <void property="totalDeaths">
+   <int>10303</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Lesotho</string>
+  </void>
+  <void property="countryCode">
+   <string>LS</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>11</int>
+  </void>
+  <void property="slug">
+   <string>lesotho</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>32910</int>
+  </void>
+  <void property="totalDeaths">
+   <int>697</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Liberia</string>
+  </void>
+  <void property="countryCode">
+   <string>LR</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>liberia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>7400</int>
+  </void>
+  <void property="totalDeaths">
+   <int>294</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Libya</string>
+  </void>
+  <void property="countryCode">
+   <string>LY</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>48</int>
+  </void>
+  <void property="newDeaths">
+   <int>2</int>
+  </void>
+  <void property="slug">
+   <string>libya</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>501705</int>
+  </void>
+  <void property="totalDeaths">
+   <int>6415</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Liechtenstein</string>
+  </void>
+  <void property="countryCode">
+   <string>LI</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>92</int>
+  </void>
+  <void property="slug">
+   <string>liechtenstein</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>16378</int>
+  </void>
+  <void property="totalDeaths">
+   <int>84</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Lithuania</string>
+  </void>
+  <void property="countryCode">
+   <string>LT</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>2878</int>
+  </void>
+  <void property="newDeaths">
+   <int>10</int>
+  </void>
+  <void property="slug">
+   <string>lithuania</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1024839</int>
+  </void>
+  <void property="totalDeaths">
+   <int>8876</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Luxembourg</string>
+  </void>
+  <void property="countryCode">
+   <string>LU</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>1732</int>
+  </void>
+  <void property="newDeaths">
+   <int>1</int>
+  </void>
+  <void property="slug">
+   <string>luxembourg</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>215831</int>
+  </void>
+  <void property="totalDeaths">
+   <int>1036</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Macedonia, Republic of</string>
+  </void>
+  <void property="countryCode">
+   <string>MK</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>262</int>
+  </void>
+  <void property="newDeaths">
+   <int>1</int>
+  </void>
+  <void property="slug">
+   <string>macedonia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>305979</int>
+  </void>
+  <void property="totalDeaths">
+   <int>9221</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Madagascar</string>
+  </void>
+  <void property="countryCode">
+   <string>MG</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>madagascar</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>64009</int>
+  </void>
+  <void property="totalDeaths">
+   <int>1384</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Malawi</string>
+  </void>
+  <void property="countryCode">
+   <string>MW</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>9</int>
+  </void>
+  <void property="slug">
+   <string>malawi</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>85640</int>
+  </void>
+  <void property="totalDeaths">
+   <int>2626</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Malaysia</string>
+  </void>
+  <void property="countryCode">
+   <string>MY</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>15941</int>
+  </void>
+  <void property="newDeaths">
+   <int>33</int>
+  </void>
+  <void property="slug">
+   <string>malaysia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>4183359</int>
+  </void>
+  <void property="totalDeaths">
+   <int>34939</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Maldives</string>
+  </void>
+  <void property="countryCode">
+   <string>MV</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>maldives</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>177000</int>
+  </void>
+  <void property="totalDeaths">
+   <int>298</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Mali</string>
+  </void>
+  <void property="countryCode">
+   <string>ML</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>4</int>
+  </void>
+  <void property="slug">
+   <string>mali</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>30484</int>
+  </void>
+  <void property="totalDeaths">
+   <int>727</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Malta</string>
+  </void>
+  <void property="countryCode">
+   <string>MT</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>760</int>
+  </void>
+  <void property="slug">
+   <string>malta</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>79539</int>
+  </void>
+  <void property="totalDeaths">
+   <int>638</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Marshall Islands</string>
+  </void>
+  <void property="countryCode">
+   <string>MH</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>marshall-islands</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>7</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Mauritania</string>
+  </void>
+  <void property="countryCode">
+   <string>MR</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>1</int>
+  </void>
+  <void property="slug">
+   <string>mauritania</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>58669</int>
+  </void>
+  <void property="totalDeaths">
+   <int>982</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Mauritius</string>
+  </void>
+  <void property="countryCode">
+   <string>MU</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>mauritius</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>210343</int>
+  </void>
+  <void property="totalDeaths">
+   <int>968</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Mexico</string>
+  </void>
+  <void property="countryCode">
+   <string>MX</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>mexico</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>5654311</int>
+  </void>
+  <void property="totalDeaths">
+   <int>322845</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Micronesia, Federated States of</string>
+  </void>
+  <void property="countryCode">
+   <string>FM</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>micronesia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Moldova</string>
+  </void>
+  <void property="countryCode">
+   <string>MD</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>296</int>
+  </void>
+  <void property="newDeaths">
+   <int>3</int>
+  </void>
+  <void property="slug">
+   <string>moldova</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>513442</int>
+  </void>
+  <void property="totalDeaths">
+   <int>11431</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Monaco</string>
+  </void>
+  <void property="countryCode">
+   <string>MC</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>37</int>
+  </void>
+  <void property="slug">
+   <string>monaco</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>10758</int>
+  </void>
+  <void property="totalDeaths">
+   <int>54</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Mongolia</string>
+  </void>
+  <void property="countryCode">
+   <string>MN</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>mongolia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>918867</int>
+  </void>
+  <void property="totalDeaths">
+   <int>2177</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Montenegro</string>
+  </void>
+  <void property="countryCode">
+   <string>ME</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>92</int>
+  </void>
+  <void property="slug">
+   <string>montenegro</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>233102</int>
+  </void>
+  <void property="totalDeaths">
+   <int>2702</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Morocco</string>
+  </void>
+  <void property="countryCode">
+   <string>MA</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>60</int>
+  </void>
+  <void property="slug">
+   <string>morocco</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1163274</int>
+  </void>
+  <void property="totalDeaths">
+   <int>16060</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Mozambique</string>
+  </void>
+  <void property="countryCode">
+   <string>MZ</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>7</int>
+  </void>
+  <void property="slug">
+   <string>mozambique</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>225256</int>
+  </void>
+  <void property="totalDeaths">
+   <int>2200</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Myanmar</string>
+  </void>
+  <void property="countryCode">
+   <string>MM</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>139</int>
+  </void>
+  <void property="slug">
+   <string>myanmar</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>611587</int>
+  </void>
+  <void property="totalDeaths">
+   <int>19430</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Namibia</string>
+  </void>
+  <void property="countryCode">
+   <string>NA</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>namibia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>157622</int>
+  </void>
+  <void property="totalDeaths">
+   <int>4019</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Nepal</string>
+  </void>
+  <void property="countryCode">
+   <string>NP</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>24</int>
+  </void>
+  <void property="slug">
+   <string>nepal</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>978426</int>
+  </void>
+  <void property="totalDeaths">
+   <int>11951</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Netherlands</string>
+  </void>
+  <void property="countryCode">
+   <string>NL</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>27766</int>
+  </void>
+  <void property="newDeaths">
+   <int>37</int>
+  </void>
+  <void property="slug">
+   <string>netherlands</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>7917961</int>
+  </void>
+  <void property="totalDeaths">
+   <int>21982</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>New Zealand</string>
+  </void>
+  <void property="countryCode">
+   <string>NZ</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>11654</int>
+  </void>
+  <void property="newDeaths">
+   <int>15</int>
+  </void>
+  <void property="slug">
+   <string>new-zealand</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>672712</int>
+  </void>
+  <void property="totalDeaths">
+   <int>314</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Nicaragua</string>
+  </void>
+  <void property="countryCode">
+   <string>NI</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>nicaragua</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>18434</int>
+  </void>
+  <void property="totalDeaths">
+   <int>230</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Niger</string>
+  </void>
+  <void property="countryCode">
+   <string>NE</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>niger</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>8801</int>
+  </void>
+  <void property="totalDeaths">
+   <int>308</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Nigeria</string>
+  </void>
+  <void property="countryCode">
+   <string>NG</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>nigeria</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>255415</int>
+  </void>
+  <void property="totalDeaths">
+   <int>3142</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Norway</string>
+  </void>
+  <void property="countryCode">
+   <string>NO</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>1753</int>
+  </void>
+  <void property="slug">
+   <string>norway</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1405960</int>
+  </void>
+  <void property="totalDeaths">
+   <int>2518</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Oman</string>
+  </void>
+  <void property="countryCode">
+   <string>OM</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>64</int>
+  </void>
+  <void property="slug">
+   <string>oman</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>388343</int>
+  </void>
+  <void property="totalDeaths">
+   <int>4250</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Pakistan</string>
+  </void>
+  <void property="countryCode">
+   <string>PK</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>244</int>
+  </void>
+  <void property="newDeaths">
+   <int>6</int>
+  </void>
+  <void property="slug">
+   <string>pakistan</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1524793</int>
+  </void>
+  <void property="totalDeaths">
+   <int>30355</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Palau</string>
+  </void>
+  <void property="countryCode">
+   <string>PW</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>palau</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>4024</int>
+  </void>
+  <void property="totalDeaths">
+   <int>6</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Palestinian Territory</string>
+  </void>
+  <void property="countryCode">
+   <string>PS</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>palestine</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>655750</int>
+  </void>
+  <void property="totalDeaths">
+   <int>5655</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Panama</string>
+  </void>
+  <void property="countryCode">
+   <string>PA</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>293</int>
+  </void>
+  <void property="newDeaths">
+   <int>2</int>
+  </void>
+  <void property="slug">
+   <string>panama</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>764536</int>
+  </void>
+  <void property="totalDeaths">
+   <int>8170</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Papua New Guinea</string>
+  </void>
+  <void property="countryCode">
+   <string>PG</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>papua-new-guinea</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>43203</int>
+  </void>
+  <void property="totalDeaths">
+   <int>640</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Paraguay</string>
+  </void>
+  <void property="countryCode">
+   <string>PY</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>paraguay</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>647950</int>
+  </void>
+  <void property="totalDeaths">
+   <int>18664</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Peru</string>
+  </void>
+  <void property="countryCode">
+   <string>PE</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>1068</int>
+  </void>
+  <void property="newDeaths">
+   <int>50</int>
+  </void>
+  <void property="slug">
+   <string>peru</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>3546696</int>
+  </void>
+  <void property="totalDeaths">
+   <int>212207</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Philippines</string>
+  </void>
+  <void property="countryCode">
+   <string>PH</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>321</int>
+  </void>
+  <void property="newDeaths">
+   <int>124</int>
+  </void>
+  <void property="slug">
+   <string>philippines</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>3678245</int>
+  </void>
+  <void property="totalDeaths">
+   <int>59249</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Poland</string>
+  </void>
+  <void property="countryCode">
+   <string>PL</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>4991</int>
+  </void>
+  <void property="newDeaths">
+   <int>133</int>
+  </void>
+  <void property="slug">
+   <string>poland</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>5962931</int>
+  </void>
+  <void property="totalDeaths">
+   <int>115173</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Portugal</string>
+  </void>
+  <void property="countryCode">
+   <string>PT</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>54773</int>
+  </void>
+  <void property="newDeaths">
+   <int>150</int>
+  </void>
+  <void property="slug">
+   <string>portugal</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>3588776</int>
+  </void>
+  <void property="totalDeaths">
+   <int>21695</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Qatar</string>
+  </void>
+  <void property="countryCode">
+   <string>QA</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>132</int>
+  </void>
+  <void property="slug">
+   <string>qatar</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>361415</int>
+  </void>
+  <void property="totalDeaths">
+   <int>677</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Republic of Kosovo</string>
+  </void>
+  <void property="countryCode">
+   <string>XK</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>32</int>
+  </void>
+  <void property="newDeaths">
+   <int>2</int>
+  </void>
+  <void property="slug">
+   <string>kosovo</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>227471</int>
+  </void>
+  <void property="totalDeaths">
+   <int>3134</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Romania</string>
+  </void>
+  <void property="countryCode">
+   <string>RO</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>2972</int>
+  </void>
+  <void property="newDeaths">
+   <int>21</int>
+  </void>
+  <void property="slug">
+   <string>romania</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>2853570</int>
+  </void>
+  <void property="totalDeaths">
+   <int>65015</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Russian Federation</string>
+  </void>
+  <void property="countryCode">
+   <string>RU</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>19767</int>
+  </void>
+  <void property="newDeaths">
+   <int>340</int>
+  </void>
+  <void property="slug">
+   <string>russia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>17564186</int>
+  </void>
+  <void property="totalDeaths">
+   <int>361014</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Rwanda</string>
+  </void>
+  <void property="countryCode">
+   <string>RW</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>rwanda</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>129718</int>
+  </void>
+  <void property="totalDeaths">
+   <int>1459</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Saint Kitts and Nevis</string>
+  </void>
+  <void property="countryCode">
+   <string>KN</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>saint-kitts-and-nevis</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>5549</int>
+  </void>
+  <void property="totalDeaths">
+   <int>43</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Saint Lucia</string>
+  </void>
+  <void property="countryCode">
+   <string>LC</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>saint-lucia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>22953</int>
+  </void>
+  <void property="totalDeaths">
+   <int>365</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Saint Vincent and Grenadines</string>
+  </void>
+  <void property="countryCode">
+   <string>VC</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>saint-vincent-and-the-grenadines</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>8335</int>
+  </void>
+  <void property="totalDeaths">
+   <int>106</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Samoa</string>
+  </void>
+  <void property="countryCode">
+   <string>WS</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>172</int>
+  </void>
+  <void property="slug">
+   <string>samoa</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1713</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>San Marino</string>
+  </void>
+  <void property="countryCode">
+   <string>SM</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>38</int>
+  </void>
+  <void property="slug">
+   <string>san-marino</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>15345</int>
+  </void>
+  <void property="totalDeaths">
+   <int>113</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Sao Tome and Principe</string>
+  </void>
+  <void property="countryCode">
+   <string>ST</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>sao-tome-and-principe</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>5945</int>
+  </void>
+  <void property="totalDeaths">
+   <int>73</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Saudi Arabia</string>
+  </void>
+  <void property="countryCode">
+   <string>SA</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>107</int>
+  </void>
+  <void property="newDeaths">
+   <int>2</int>
+  </void>
+  <void property="slug">
+   <string>saudi-arabia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>750814</int>
+  </void>
+  <void property="totalDeaths">
+   <int>9045</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Senegal</string>
+  </void>
+  <void property="countryCode">
+   <string>SN</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>9</int>
+  </void>
+  <void property="slug">
+   <string>senegal</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>85895</int>
+  </void>
+  <void property="totalDeaths">
+   <int>1964</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Serbia</string>
+  </void>
+  <void property="countryCode">
+   <string>RS</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>1915</int>
+  </void>
+  <void property="newDeaths">
+   <int>11</int>
+  </void>
+  <void property="slug">
+   <string>serbia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1976567</int>
+  </void>
+  <void property="totalDeaths">
+   <int>15799</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Seychelles</string>
+  </void>
+  <void property="countryCode">
+   <string>SC</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>seychelles</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>40421</int>
+  </void>
+  <void property="totalDeaths">
+   <int>164</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Sierra Leone</string>
+  </void>
+  <void property="countryCode">
+   <string>SL</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>sierra-leone</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>7674</int>
+  </void>
+  <void property="totalDeaths">
+   <int>125</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Singapore</string>
+  </void>
+  <void property="countryCode">
+   <string>SG</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>5605</int>
+  </void>
+  <void property="newDeaths">
+   <int>5</int>
+  </void>
+  <void property="slug">
+   <string>singapore</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1096428</int>
+  </void>
+  <void property="totalDeaths">
+   <int>1268</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Slovakia</string>
+  </void>
+  <void property="countryCode">
+   <string>SK</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>8429</int>
+  </void>
+  <void property="newDeaths">
+   <int>18</int>
+  </void>
+  <void property="slug">
+   <string>slovakia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>2443137</int>
+  </void>
+  <void property="totalDeaths">
+   <int>19352</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Slovenia</string>
+  </void>
+  <void property="countryCode">
+   <string>SI</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>2814</int>
+  </void>
+  <void property="newDeaths">
+   <int>5</int>
+  </void>
+  <void property="slug">
+   <string>slovenia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>968109</int>
+  </void>
+  <void property="totalDeaths">
+   <int>6487</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Solomon Islands</string>
+  </void>
+  <void property="countryCode">
+   <string>SB</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>296</int>
+  </void>
+  <void property="slug">
+   <string>solomon-islands</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>11470</int>
+  </void>
+  <void property="totalDeaths">
+   <int>133</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Somalia</string>
+  </void>
+  <void property="countryCode">
+   <string>SO</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>somalia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>26410</int>
+  </void>
+  <void property="totalDeaths">
+   <int>1361</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>South Africa</string>
+  </void>
+  <void property="countryCode">
+   <string>ZA</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>1886</int>
+  </void>
+  <void property="newDeaths">
+   <int>12</int>
+  </void>
+  <void property="slug">
+   <string>south-africa</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>3718953</int>
+  </void>
+  <void property="totalDeaths">
+   <int>100032</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>South Sudan</string>
+  </void>
+  <void property="countryCode">
+   <string>SS</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>25</int>
+  </void>
+  <void property="slug">
+   <string>south-sudan</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>17262</int>
+  </void>
+  <void property="totalDeaths">
+   <int>138</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Spain</string>
+  </void>
+  <void property="countryCode">
+   <string>ES</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>spain</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>11508309</int>
+  </void>
+  <void property="totalDeaths">
+   <int>102218</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Sri Lanka</string>
+  </void>
+  <void property="countryCode">
+   <string>LK</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>178</int>
+  </void>
+  <void property="newDeaths">
+   <int>4</int>
+  </void>
+  <void property="slug">
+   <string>sri-lanka</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>661631</int>
+  </void>
+  <void property="totalDeaths">
+   <int>16477</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Sudan</string>
+  </void>
+  <void property="countryCode">
+   <string>SD</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>26</int>
+  </void>
+  <void property="newDeaths">
+   <int>2</int>
+  </void>
+  <void property="slug">
+   <string>sudan</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>61955</int>
+  </void>
+  <void property="totalDeaths">
+   <int>4907</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Suriname</string>
+  </void>
+  <void property="countryCode">
+   <string>SR</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>suriname</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>79202</int>
+  </void>
+  <void property="totalDeaths">
+   <int>1324</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Swaziland</string>
+  </void>
+  <void property="countryCode">
+   <string>SZ</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>48</int>
+  </void>
+  <void property="slug">
+   <string>swaziland</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>69771</int>
+  </void>
+  <void property="totalDeaths">
+   <int>1394</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Sweden</string>
+  </void>
+  <void property="countryCode">
+   <string>SE</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>sweden</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>2481736</int>
+  </void>
+  <void property="totalDeaths">
+   <int>18189</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Switzerland</string>
+  </void>
+  <void property="countryCode">
+   <string>CH</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>12797</int>
+  </void>
+  <void property="newDeaths">
+   <int>6</int>
+  </void>
+  <void property="slug">
+   <string>switzerland</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>3497499</int>
+  </void>
+  <void property="totalDeaths">
+   <int>13564</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Syrian Arab Republic (Syria)</string>
+  </void>
+  <void property="countryCode">
+   <string>SY</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>syria</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>55688</int>
+  </void>
+  <void property="totalDeaths">
+   <int>3140</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Taiwan, Republic of China</string>
+  </void>
+  <void property="countryCode">
+   <string>TW</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>238</int>
+  </void>
+  <void property="slug">
+   <string>taiwan</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>23393</int>
+  </void>
+  <void property="totalDeaths">
+   <int>853</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Tajikistan</string>
+  </void>
+  <void property="countryCode">
+   <string>TJ</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>tajikistan</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>17786</int>
+  </void>
+  <void property="totalDeaths">
+   <int>125</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Tanzania, United Republic of</string>
+  </void>
+  <void property="countryCode">
+   <string>TZ</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>tanzania</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>33815</int>
+  </void>
+  <void property="totalDeaths">
+   <int>800</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Thailand</string>
+  </void>
+  <void property="countryCode">
+   <string>TH</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>thailand</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>3628347</int>
+  </void>
+  <void property="totalDeaths">
+   <int>25130</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Timor-Leste</string>
+  </void>
+  <void property="countryCode">
+   <string>TL</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>timor-leste</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>22830</int>
+  </void>
+  <void property="totalDeaths">
+   <int>130</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Togo</string>
+  </void>
+  <void property="countryCode">
+   <string>TG</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>9</int>
+  </void>
+  <void property="slug">
+   <string>togo</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>36939</int>
+  </void>
+  <void property="totalDeaths">
+   <int>272</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Tonga</string>
+  </void>
+  <void property="countryCode">
+   <string>TO</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>tonga</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>6423</int>
+  </void>
+  <void property="totalDeaths">
+   <int>6</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Trinidad and Tobago</string>
+  </void>
+  <void property="countryCode">
+   <string>TT</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>103</int>
+  </void>
+  <void property="newDeaths">
+   <int>4</int>
+  </void>
+  <void property="slug">
+   <string>trinidad-and-tobago</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>137860</int>
+  </void>
+  <void property="totalDeaths">
+   <int>3750</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Tunisia</string>
+  </void>
+  <void property="countryCode">
+   <string>TN</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>tunisia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>1035884</int>
+  </void>
+  <void property="totalDeaths">
+   <int>28323</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Turkey</string>
+  </void>
+  <void property="countryCode">
+   <string>TR</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>14336</int>
+  </void>
+  <void property="newDeaths">
+   <int>56</int>
+  </void>
+  <void property="slug">
+   <string>turkey</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>14860560</int>
+  </void>
+  <void property="totalDeaths">
+   <int>98033</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Uganda</string>
+  </void>
+  <void property="countryCode">
+   <string>UG</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>13</int>
+  </void>
+  <void property="slug">
+   <string>uganda</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>163905</int>
+  </void>
+  <void property="totalDeaths">
+   <int>3596</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Ukraine</string>
+  </void>
+  <void property="countryCode">
+   <string>UA</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>ukraine</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>5040518</int>
+  </void>
+  <void property="totalDeaths">
+   <int>112459</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>United Arab Emirates</string>
+  </void>
+  <void property="countryCode">
+   <string>AE</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>313</int>
+  </void>
+  <void property="slug">
+   <string>united-arab-emirates</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>891300</int>
+  </void>
+  <void property="totalDeaths">
+   <int>2302</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>United Kingdom</string>
+  </void>
+  <void property="countryCode">
+   <string>GB</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>88946</int>
+  </void>
+  <void property="newDeaths">
+   <int>213</int>
+  </void>
+  <void property="slug">
+   <string>united-kingdom</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>21234719</int>
+  </void>
+  <void property="totalDeaths">
+   <int>165782</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>United States of America</string>
+  </void>
+  <void property="countryCode">
+   <string>US</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>38108</int>
+  </void>
+  <void property="newDeaths">
+   <int>1221</int>
+  </void>
+  <void property="slug">
+   <string>united-states</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>80057236</int>
+  </void>
+  <void property="totalDeaths">
+   <int>979869</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Uruguay</string>
+  </void>
+  <void property="countryCode">
+   <string>UY</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>907</int>
+  </void>
+  <void property="newDeaths">
+   <int>3</int>
+  </void>
+  <void property="slug">
+   <string>uruguay</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>887935</int>
+  </void>
+  <void property="totalDeaths">
+   <int>7159</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Uzbekistan</string>
+  </void>
+  <void property="countryCode">
+   <string>UZ</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>39</int>
+  </void>
+  <void property="slug">
+   <string>uzbekistan</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>237749</int>
+  </void>
+  <void property="totalDeaths">
+   <int>1637</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Vanuatu</string>
+  </void>
+  <void property="countryCode">
+   <string>VU</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>251</int>
+  </void>
+  <void property="slug">
+   <string>vanuatu</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>3379</int>
+  </void>
+  <void property="totalDeaths">
+   <int>2</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Venezuela (Bolivarian Republic)</string>
+  </void>
+  <void property="countryCode">
+   <string>VE</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="slug">
+   <string>venezuela</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>520373</int>
+  </void>
+  <void property="totalDeaths">
+   <int>5682</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Viet Nam</string>
+  </void>
+  <void property="countryCode">
+   <string>VN</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>92355</int>
+  </void>
+  <void property="newDeaths">
+   <int>39</int>
+  </void>
+  <void property="slug">
+   <string>vietnam</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>9564609</int>
+  </void>
+  <void property="totalDeaths">
+   <int>42493</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Yemen</string>
+  </void>
+  <void property="countryCode">
+   <string>YE</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>1</int>
+  </void>
+  <void property="slug">
+   <string>yemen</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>11806</int>
+  </void>
+  <void property="totalDeaths">
+   <int>2143</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Zambia</string>
+  </void>
+  <void property="countryCode">
+   <string>ZM</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>300</int>
+  </void>
+  <void property="slug">
+   <string>zambia</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>316850</int>
+  </void>
+  <void property="totalDeaths">
+   <int>3966</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.CountryDAO">
+  <void property="country">
+   <string>Zimbabwe</string>
+  </void>
+  <void property="countryCode">
+   <string>ZW</string>
+  </void>
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>104</int>
+  </void>
+  <void property="newDeaths">
+   <int>4</int>
+  </void>
+  <void property="slug">
+   <string>zimbabwe</string>
+  </void>
+  <void property="totalConfirmed">
+   <int>246286</int>
+  </void>
+  <void property="totalDeaths">
+   <int>5444</int>
+  </void>
+ </object>
+ <object class="Work.Repositories.Model.GlobalDAO">
+  <void property="date">
+   <object class="java.sql.Timestamp">
+    <long>1648788512348</long>
+   </object>
+  </void>
+  <void property="newConfirmed">
+   <int>1314912</int>
+  </void>
+  <void property="newDeaths">
+   <int>4480</int>
+  </void>
+  <void property="totalConfirmed">
+   <int>486462282</int>
+  </void>
+  <void property="totalDeaths">
+   <int>6134879</int>
+  </void>
+ </object>
+</java>

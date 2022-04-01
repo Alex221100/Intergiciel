@@ -1,10 +1,11 @@
 package Work.Consumers;
 
-import Data.Model.CountryDAO;
-import Data.Requests.PostegreSQLRepository;
 import Work.Model.Country;
 import Work.Model.Global;
 import Work.Producers.Pr3;
+import Work.Repositories.Model.CountryDAO;
+import Work.Repositories.Model.GlobalDAO;
+import Work.Repositories.PostegreSQLRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
@@ -33,7 +34,7 @@ public class Cs2 {
             case "CONFIRMEDAVG" -> result = getConfirmedAvg();
             case "DEATHSAVG" -> result = getDeathsAvg();
             case "COUNTRIESDEATHSPERCENT" -> result = getCountriesDeathsPercent();
-            case "EXPORT" -> result = getExport();
+            case "EXPORT" -> getExport();
             default -> System.err.println("Commande inconnue : " + command);
         }
 
@@ -80,20 +81,23 @@ public class Cs2 {
         return result;
     }
 
-    private static int getExport() throws FileNotFoundException {
+    private static void getExport() throws FileNotFoundException {
 
-        /*List<CountryDAO> countries = PostegreSQLRepository.getCountries();
-        XMLEncoder encoder = new XMLEncoder(new FileOutputStream("test"));
+        List<CountryDAO> countries = PostegreSQLRepository.getCountries();
+        GlobalDAO global = PostegreSQLRepository.getGlobal();
+        XMLEncoder encoder = new XMLEncoder(new FileOutputStream("src/main/java/Work/export-database-xml"));
         try {
+            //add countries in the file
             for (CountryDAO country : countries) {
                 encoder.writeObject(country);
-                encoder.flush();
             }
+
+            //add global in the file
+            encoder.writeObject(global);
+            encoder.flush();
         } finally {
-            // fermeture de l'encodeur
             encoder.close();
-        }*/
-        return 0;
+        }
     }
 
 }

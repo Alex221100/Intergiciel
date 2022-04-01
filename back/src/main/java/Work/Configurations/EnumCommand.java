@@ -1,4 +1,4 @@
-package Work.Config;
+package Work.Configurations;
 
 public enum EnumCommand {
     GLOBAL,

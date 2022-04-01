@@ -1,11 +1,10 @@
 package Work.Model;
 
-import Data.Model.CountryDAO;
+import Work.Repositories.Model.CountryDAO;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.sql.Timestamp;
-import java.util.Date;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Country {

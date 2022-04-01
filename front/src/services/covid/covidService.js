@@ -46,4 +46,11 @@ export default class covidService {
      static async getExport() {
         return await covidApi.getExport();
     }
+
+    /**
+     * Gets export.
+     */
+     static async getHelp() {
+        return await covidApi.getHelp();
+    }
 }

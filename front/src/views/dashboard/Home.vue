@@ -117,6 +117,50 @@
             </div>
           </v-card-text>
         </v-card>
+
+        <v-card id=card6>
+          <v-card-text class="pa-5">
+            <div class="d-sm-flex align-center">
+              <div>
+                <h3 class="title blue-grey--text text--darken-2 font-weight-regular">GET Export</h3>
+                <h6 class="subtitle-2 font-weight-light">L'exportation des données de la base de données en XML</h6>
+              </div>
+            </div>
+            <div>
+              <v-row>
+                <v-col>
+                  <code>localhost:8080/export</code><br/>
+                  <v-btn elevation="2" @click="getExport">Lancer</v-btn>
+                </v-col>
+                <v-col class=terminal>
+                  
+                </v-col>
+              </v-row>
+            </div>
+          </v-card-text>
+        </v-card>
+
+        <v-card id=card7>
+          <v-card-text class="pa-5">
+            <div class="d-sm-flex align-center">
+              <div>
+                <h3 class="title blue-grey--text text--darken-2 font-weight-regular">GET Help</h3>
+                <h6 class="subtitle-2 font-weight-light">Affichage des commandes et leurs explications.</h6>
+              </div>
+            </div>
+            <div>
+              <v-row>
+                <v-col>
+                  <code>localhost:8080/help</code><br/>
+                  <v-btn elevation="2" @click="getHelp">Lancer</v-btn>
+                </v-col>
+                <v-col class=terminal>
+                  <p v-html="help"></p>
+                </v-col>
+              </v-row>
+            </div>
+          </v-card-text>
+        </v-card>
   </v-container>
 </template>
 
@@ -158,6 +202,7 @@ export default {
        'United States of America', 'Uruguay', 'Uzbekistan', 'Vanuatu', 'Venezuela (Bolivarian Republic)', 'Viet Nam', 
        'Yemen', 'Zambia', 'Zimbabwe'],
        countryName: "Afghanistan",
+       help: null
     }
   },
   methods:{
@@ -209,12 +254,22 @@ export default {
     async getExport(){
       try{
         const response = await covidService.getExport();
-        this.countriesDeathsPercent = response.data;
+        this.export = response.data;
+        console.log(this.export)
       } catch (error) {
         console.log(error);
       }
     },
 
+    async getHelp(){
+      try{
+        const response = await covidService.getHelp();
+        this.help = response.data;
+      } catch (error) {
+        console.log(error);
+      }
+    },
+    
     formatJson(json){
       var formattedString = json.split(",").join("<br />")
       return(formattedString)

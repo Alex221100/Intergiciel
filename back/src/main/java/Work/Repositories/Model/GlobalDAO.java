@@ -1,4 +1,4 @@
-package Data.Model;
+package Work.Repositories.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -6,19 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.sql.Timestamp;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class CountryDAO {
-
-    @JsonProperty("ID")
-    private String id;
-
-    @JsonProperty("Country")
-    private String country;
-
-    @JsonProperty("CountryCode")
-    private String countryCode;
-
-    @JsonProperty("Slug")
-    private String slug;
+public class GlobalDAO {
 
     @JsonProperty("NewConfirmed")
     private int newConfirmed;
@@ -41,13 +29,10 @@ public class CountryDAO {
     @JsonProperty("Date")
     private Timestamp date;
 
-    public CountryDAO() {
+    public GlobalDAO() {
     }
 
-    public CountryDAO(String country, String countryCode, String slug, int newConfirmed, int totalConfirmed, int newDeaths, int totalDeaths, int newRecovered, int totalRecovered, Timestamp date) {
-        this.country = country;
-        this.countryCode = countryCode;
-        this.slug = slug;
+    public GlobalDAO(int newConfirmed, int totalConfirmed, int newDeaths, int totalDeaths, int newRecovered, int totalRecovered, Timestamp date) {
         this.newConfirmed = newConfirmed;
         this.totalConfirmed = totalConfirmed;
         this.newDeaths = newDeaths;
@@ -55,38 +40,6 @@ public class CountryDAO {
         this.newRecovered = newRecovered;
         this.totalRecovered = totalRecovered;
         this.date = date;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public String getCountryCode() {
-        return countryCode;
-    }
-
-    public void setCountryCode(String countryCode) {
-        this.countryCode = countryCode;
-    }
-
-    public String getSlug() {
-        return slug;
-    }
-
-    public void setSlug(String slug) {
-        this.slug = slug;
     }
 
     public int getNewConfirmed() {
@@ -144,5 +97,4 @@ public class CountryDAO {
     public void setDate(Timestamp date) {
         this.date = date;
     }
-
 }

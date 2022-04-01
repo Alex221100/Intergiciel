@@ -7,7 +7,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-
 @SpringBootApplication
 @EntityScan(basePackages = {"com.Data.Entity"})
 public class Main {
@@ -31,8 +30,6 @@ public class Main {
 
         scheduler.scheduleJob(job, trigger);
         scheduler.start();
-
-        //Pr2.getInstance().sendCommand("global");
     }
 
 }

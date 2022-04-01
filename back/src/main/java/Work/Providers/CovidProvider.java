@@ -1,11 +1,11 @@
-package Work;
+package Work.Providers;
 
 
 import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
-public class APIProvider {
+public class CovidProvider {
 
     private static final WebClient webClient = WebClient.create("https://api.covid19api.com/");
 

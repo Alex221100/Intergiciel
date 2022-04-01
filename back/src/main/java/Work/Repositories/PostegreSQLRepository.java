@@ -1,8 +1,8 @@
-package Data.Requests;
+package Work.Repositories;
 
-import Data.Connections.PostgreSQLJDBC;
-import Data.Model.CountryDAO;
-import Data.Model.GlobalDAO;
+import Work.Repositories.Connections.PostgreSQLJDBC;
+import Work.Repositories.Model.CountryDAO;
+import Work.Repositories.Model.GlobalDAO;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

@@ -1,4 +1,4 @@
-package Data.Connections;
+package Work.Repositories.Connections;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

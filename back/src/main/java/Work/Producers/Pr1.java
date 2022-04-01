@@ -1,6 +1,6 @@
 package Work.Producers;
 
-import Work.APIProvider;
+import Work.Providers.CovidProvider;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -37,7 +37,7 @@ public class Pr1 {
 
     public void sendCovidSummary() {
         System.out.println("je suis dans Pr1");
-        APIProvider.getSummaryToJson().subscribe(summary -> {
+        CovidProvider.getSummaryToJson().subscribe(summary -> {
             final ProducerRecord<Long, String> record = new ProducerRecord<Long, String>("Topic1", summary);
             try {
                 producer.send(record).get();

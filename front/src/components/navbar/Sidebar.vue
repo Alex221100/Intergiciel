@@ -75,6 +75,18 @@ export default {
         title: "GET Country Deaths percent",
         icon: "mdi-percent",
         to: "#card5"
+      },
+
+      {
+        title: "GET Export",
+        icon: "mdi-download-box",
+        to: "#card6"
+      },
+
+      {
+        title: "GET Help",
+        icon: "mdi-help-circle",
+        to: "#card7"
       }
     ]
   }),

@@ -20,19 +20,6 @@ public class Cs3 {
         pendingMessage = message;
     }
 
-
-    /*public static Future<String> getResult() {
-        return executor.submit(() -> {
-            if (pendingMessage != null) {
-                String message = pendingMessage;
-                pendingMessage = null;
-                return message;
-            }
-            else {
-                return getResult().get();
-            }
-        });*/
-
     public static String getResult() throws ExecutionException, InterruptedException {
         Future<String> futureTask = executor.submit(() -> test());
 

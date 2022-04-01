@@ -1,10 +1,10 @@
 package Work.Consumers;
 
-import Data.Model.CountryDAO;
-import Data.Model.GlobalDAO;
-import Data.Requests.PostegreSQLRepository;
 import Work.Model.Country;
 import Work.Model.Summary;
+import Work.Repositories.Model.CountryDAO;
+import Work.Repositories.Model.GlobalDAO;
+import Work.Repositories.PostegreSQLRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
