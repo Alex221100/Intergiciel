@@ -46,7 +46,7 @@ La commande va lancer notre docker-compose qui va créer la stack. On retrouve :
   
    ## Crédits
    
-   RIBAUT THOMAS : https://github.com/Dopey990
+   RIBAUT THOMAS : https://github.com/Dopey990.  
    DEREZE Alexandra : https://github.com/Alex221100
    
   
