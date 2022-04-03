@@ -44,3 +44,9 @@ La commande va lancer notre docker-compose qui va créer la stack. On retrouve :
   Dans votre navigateur, tapez : localhost:{port}.  
   Vous arrivez sur le front et vous pouvez maintenant appeler la route que vous souhaitez en appuyant sur le bouton de votre choix dans chacune des cartes.   
   
+   ## Crédits
+   
+   RIBAUT THOMAS : https://github.com/Dopey990.  
+   DEREZE Alexandra : https://github.com/Alex221100
+   
+  
