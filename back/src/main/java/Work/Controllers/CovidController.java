@@ -21,18 +21,15 @@ import java.util.concurrent.ExecutionException;
 @RequestMapping
 public class CovidController {
 
-    @Autowired
-    private Pr2 pr2;
-
     @GetMapping(value="/global")
     public ResponseEntity<String> getGlobalValues() throws ExecutionException, InterruptedException {
-        pr2.sendCommand(EnumCommand.GLOBAL);
+        Pr2.getInstance().sendCommand(EnumCommand.GLOBAL);
         return ResponseEntity.ok(Cs3.getResult());
     }
 
     @GetMapping(value="/country")
     public ResponseEntity<String> getCountryValues(@RequestParam String countryName) throws ExecutionException, InterruptedException {
-        pr2.sendCommandWithParameters(EnumCommand.COUNTRY, new ArrayList<>() {{
+        Pr2.getInstance().sendCommandWithParameters(EnumCommand.COUNTRY, new ArrayList<>() {{
             add(countryName);
         }});
         return ResponseEntity.ok(Cs3.getResult());
@@ -40,28 +37,26 @@ public class CovidController {
 
     @GetMapping(value="/confirmedAvg")
     public ResponseEntity<String> getConfirmedAvg() throws ExecutionException, InterruptedException {
-        pr2.sendCommand(EnumCommand.CONFIRMEDAVG);
+        Pr2.getInstance().sendCommand(EnumCommand.CONFIRMEDAVG);
         return ResponseEntity.ok(Cs3.getResult());
     }
 
     @GetMapping(value="/deathsAvg")
     public ResponseEntity<String> getDeathsAvg() throws ExecutionException, InterruptedException {
-        pr2.sendCommand(EnumCommand.DEATHSAVG);
+        Pr2.getInstance().sendCommand(EnumCommand.DEATHSAVG);
         return ResponseEntity.ok(Cs3.getResult());
     }
 
     @GetMapping(value="/countriesDeathsPercent")
     public ResponseEntity<String> getCountriesDeathsPercent() throws ExecutionException, InterruptedException {
-        pr2.sendCommand(EnumCommand.COUNTRIESDEATHSPERCENT);
+        Pr2.getInstance().sendCommand(EnumCommand.COUNTRIESDEATHSPERCENT);
         return ResponseEntity.ok(Cs3.getResult());
     }
 
     @GetMapping(value="/export")
-    public ResponseEntity<File> getExport() throws FileNotFoundException {
-        pr2.sendCommand(EnumCommand.EXPORT);
-        File input = new File("export-database-xml");
-        System.out.println(input);
-        return ResponseEntity.ok(input);
+    public ResponseEntity<String> getExport() throws FileNotFoundException, ExecutionException, InterruptedException {
+        Pr2.getInstance().sendCommand(EnumCommand.EXPORT);
+        return ResponseEntity.ok(Cs3.getResult());
     }
 
     @GetMapping(value="/help")

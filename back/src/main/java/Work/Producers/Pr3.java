@@ -13,7 +13,7 @@ import java.util.concurrent.ExecutionException;
 
 @Service
 public class Pr3 {
-
+    private static Pr3 instance = null;
     private static KafkaProducer<Long, String> producer = null;
 
     private Pr3() {
@@ -23,6 +23,14 @@ public class Pr3 {
             put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, LongSerializer.class.getName());
             put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         }});
+    }
+
+    public static Pr3 getInstance() {
+        if (instance == null) {
+            instance = new Pr3();
+        }
+
+        return instance;
     }
 
     public void displayResult(Object resultObject) {

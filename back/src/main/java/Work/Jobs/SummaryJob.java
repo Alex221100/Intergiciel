@@ -9,10 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class SummaryJob implements Job {
 
-    @Autowired
-    private Pr1 pr1;
-
     public void execute(JobExecutionContext arg0) throws JobExecutionException {
-        pr1.sendCovidSummary();
+        Pr1.getInstance().sendCovidSummary();
     }
 }

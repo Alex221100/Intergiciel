@@ -11,9 +11,10 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
 import java.beans.XMLEncoder;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
 
 @Service
@@ -34,7 +35,7 @@ public class Cs2 {
             case "CONFIRMEDAVG" -> result = getConfirmedAvg();
             case "DEATHSAVG" -> result = getDeathsAvg();
             case "COUNTRIESDEATHSPERCENT" -> result = getCountriesDeathsPercent();
-            case "EXPORT" -> getExport();
+            case "EXPORT" -> result = getExport();
             default -> System.err.println("Commande inconnue : " + command);
         }
 
@@ -81,11 +82,11 @@ public class Cs2 {
         return result;
     }
 
-    private static void getExport() throws FileNotFoundException {
+    private static String getExport() throws IOException {
 
         List<CountryDAO> countries = PostegreSQLRepository.getCountries();
         GlobalDAO global = PostegreSQLRepository.getGlobal();
-        XMLEncoder encoder = new XMLEncoder(new FileOutputStream("src/main/java/Work/export-database-xml"));
+        XMLEncoder encoder = new XMLEncoder(new FileOutputStream("export-database-xml"));
         try {
             //add countries in the file
             for (CountryDAO country : countries) {
@@ -98,6 +99,7 @@ public class Cs2 {
         } finally {
             encoder.close();
         }
-    }
 
+        return new String(Files.readAllBytes(Paths.get("export-database-xml")));
+    }
 }
