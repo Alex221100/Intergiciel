@@ -16,13 +16,13 @@ public class Cs3 {
 
     @KafkaListener(topics = "Topic3", groupId = "group3")
     public void consume(String message) {
-        System.out.println("Message final : " + message);
         pendingMessage = message;
     }
 
     public static String getResult() throws ExecutionException, InterruptedException {
         Future<String> futureTask = executor.submit(() -> test());
 
+        pendingMessage = null;
         while (!futureTask.isDone()) {
             System.out.println("FutureTask is not finished yet...");
         }

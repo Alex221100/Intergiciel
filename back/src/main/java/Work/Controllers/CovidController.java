@@ -3,8 +3,9 @@ package Work.Controllers;
 import Work.Configurations.EnumCommand;
 import Work.Consumers.Cs3;
 import Work.Producers.Pr2;
-import Work.Producers.Pr3;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.apache.commons.io.IOUtils;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
@@ -54,9 +57,24 @@ public class CovidController {
     }
 
     @GetMapping(value="/export")
-    public ResponseEntity<String> getExport() throws FileNotFoundException, ExecutionException, InterruptedException {
+    public ResponseEntity<File> getExport() throws IOException, ExecutionException, InterruptedException {
         Pr2.getInstance().sendCommand(EnumCommand.EXPORT);
-        return ResponseEntity.ok(Cs3.getResult());
+
+        File result=new File("export-database-xml");
+        if(result.exists()){
+            InputStream inputStream = new FileInputStream("export-database-xml");
+            String type= URLConnection.guessContentTypeFromName("export-database-xml");
+
+            byte[] out= IOUtils.toByteArray(inputStream);
+
+            HttpHeaders responseHeaders = new HttpHeaders();
+            responseHeaders.add("content-disposition", "attachment; filename=export-database-xml");
+            responseHeaders.add("Content-Type","application/xml");
+
+            return new ResponseEntity(out, responseHeaders, HttpStatus.OK);
+        }else{
+            return new ResponseEntity("File Not Found", HttpStatus.OK);
+        }
     }
 
     @GetMapping(value="/help")

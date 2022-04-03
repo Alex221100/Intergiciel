@@ -130,10 +130,10 @@
               <v-row>
                 <v-col>
                   <code>localhost:8080/export</code><br/>
-                  <v-btn elevation="2" @click="getExport">Lancer</v-btn>
+                  <v-btn elevation="2" @click.prevent="getExport">Lancer et télécharger</v-btn>
                 </v-col>
                 <v-col class=terminal>
-                  
+                  {{exportDatabase}}
                 </v-col>
               </v-row>
             </div>
@@ -175,7 +175,7 @@ export default {
       confirmedAvg: null,
       deathsAvg: null,
       countriesDeathsPercent: null,
-      export: null,
+      exportDatabase: null,
       countriesName: ['Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antarctica', 'Antigua and Barbuda', 
       'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 
       'Belarus', 'Belgium', 'Belize', 'Benin', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 
@@ -254,11 +254,21 @@ export default {
     async getExport(){
       try{
         const response = await covidService.getExport();
-        this.export = response.data;
-        console.log(this.export)
+        console.log(response);
+        this.exportDatabase = response.data;
+        this.downloadFile();
       } catch (error) {
         console.log(error);
       }
+    },
+
+    downloadFile () {
+      const blob = new Blob([this.exportDatabase], { type: "text/xml" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "database-export";
+      link.click();
+      URL.revokeObjectURL(link.href);
     },
 
     async getHelp(){

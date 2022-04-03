@@ -46,9 +46,7 @@ export default class covidApi {
      * Gets export.
      */
      static async getExport() {
-        let pathName = await axios.get(`${baseUrl}/export`, defaultConfig);
-        console.log(pathName.data);
-        return await axios.get(`${baseUrl}${pathName.data}`, defaultConfig);
+        return await axios.get(`${baseUrl}/export`, defaultConfig);
     }
 
     /**
