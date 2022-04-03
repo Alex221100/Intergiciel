@@ -266,7 +266,7 @@ export default {
       const blob = new Blob([this.exportDatabase], { type: "text/xml" });
       const link = document.createElement("a");
       link.href = URL.createObjectURL(blob);
-      link.download = "database-export";
+      link.download = "export-database";
       link.click();
       URL.revokeObjectURL(link.href);
     },

@@ -26,7 +26,6 @@ public class Cs3 {
         while (!futureTask.isDone()) {
             System.out.println("FutureTask is not finished yet...");
         }
-        pendingMessage = null;
         return futureTask.get();
     }
 
